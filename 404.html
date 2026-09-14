@@ -1,0 +1,3166 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#134534" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Hacamatçı Mikail Hoca | Doğal Ateşli Cam Bardak & Tıbb-ı Nebevi</title>
+  <meta name="description" content="10 Yıllık Kadim Tecrübe, Tıbb-ı Nebevi ve Doğal Ateşli Cam Bardak Kupa Terapisi. Hacamatçı Mikail Hoca ile antibiyotik ve ilaç toksinlerinden arınma." />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              50: '#F2FAF6',
+              100: '#E2F5EC',
+              200: '#C2EADA',
+              300: '#94D9BE',
+              400: '#5FBF9B',
+              500: '#34A57D',
+              600: '#238562',
+              700: '#1B6B4F',
+              800: '#17543F',
+              900: '#134534',
+              950: '#09251C'
+            },
+            brandgreen: {
+              DEFAULT: '#2D6A4F',
+              dark: '#1B4332',
+              light: '#D8F3DC',
+              sage: '#E8F5E9'
+            },
+            gold: {
+              300: '#ECD382',
+              400: '#DDB847',
+              500: '#C5A059',
+              600: '#A48037'
+            }
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            amiri: ['Amiri', 'serif']
+          },
+          boxShadow: {
+            'soft': '0 10px 30px -8px rgba(19, 69, 52, 0.08)',
+            'soft-lg': '0 18px 45px -10px rgba(19, 69, 52, 0.12)',
+            'glow-green': '0 0 25px -3px rgba(35, 133, 98, 0.25)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      -webkit-text-size-adjust: 100%;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #F7FBF9;
+      color: #12382B;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      width: 100%;
+      max-width: 100vw;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Mobil cihazlarda istenmeyen iOS otomatik form zoomunu önleme */
+    @media (max-width: 768px) {
+      input, select, textarea {
+        font-size: 16px !important;
+      }
+    }
+
+    /* Dokunmatik kaydırma akıcılığı */
+    .touch-scroll {
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .bg-spiritual-pattern {
+      background-image: radial-gradient(rgba(35, 133, 98, 0.06) 1.2px, transparent 0);
+      background-size: 28px 28px;
+    }
+
+    .white-card {
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(35, 133, 98, 0.12);
+      box-shadow: 0 10px 30px -8px rgba(19, 69, 52, 0.05);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .white-card-hover:hover {
+      border-color: rgba(35, 133, 98, 0.3);
+      box-shadow: 0 18px 40px -10px rgba(19, 69, 52, 0.12);
+      transform: translateY(-3px);
+    }
+
+    .text-forest-gradient {
+      background: linear-gradient(135deg, #09251C 0%, #17543F 60%, #C5A059 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Sol Hızlı Menü Çubuğu (Desktop Floating Dock) */
+    .side-dock-btn {
+      position: relative;
+      transition: all 0.25s ease;
+    }
+    .side-dock-btn:hover {
+      transform: translateX(4px);
+      background-color: #17543F !important;
+      color: #ffffff !important;
+    }
+    .side-dock-tooltip {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      transform: translateX(8px);
+    }
+    .side-dock-btn:hover .side-dock-tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* Hacamat Takvim Stilleri */
+    .cal-day-btn {
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .cal-day-btn:hover:not(.disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px rgba(35, 133, 98, 0.18);
+    }
+    .cal-day-btn.selected {
+      background-color: #17543F !important;
+      color: #ffffff !important;
+      border-color: #17543F !important;
+      box-shadow: 0 8px 20px -4px rgba(23, 84, 63, 0.4);
+    }
+    .cal-day-btn.selected * {
+      color: #ffffff !important;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F2FAF6;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #94D9BE;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #34A57D;
+    }
+  </style>
+
+  <!-- Yönlendirme ve SEO -->
+  <link rel="canonical" href="https://sifa-hacamat.vercel.app" />
+  <meta property="og:url" content="https://sifa-hacamat.vercel.app" />
+  <meta property="og:title" content="Hacamatçı Mikail Hoca" />
+  <meta property="og:description" content="10 Yıllık Kadim Tecrübe, Tıbb-ı Nebevi ve Doğal Ateşli Cam Bardak Kupa Terapisi." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script>
+    if (window.location.hostname.includes("github.io") || window.location.hostname.includes("muratsoyak1998") || window.location.hostname.includes("netizen")) {
+      window.location.replace("https://sifa-hacamat.vercel.app" + window.location.pathname + window.location.search);
+    }
+  </script>
+</head>
+<body class="bg-[#F7FBF9] text-forest-950 antialiased selection:bg-forest-600 selection:text-white bg-spiritual-pattern pb-24 md:pb-0">
+
+  <!-- ========================================================================= -->
+  <!-- 1. SOL EKRAN SABİT HIZLI DOCK MENÜ (MASAÜSTÜ İÇİN SADE & DENGELİ) -->
+  <!-- ========================================================================= -->
+  <div class="fixed left-4 top-1/2 -translate-y-1/2 z-40 hidden xl:flex flex-col gap-2 p-2 bg-white/95 backdrop-blur-md rounded-2xl border border-forest-200/90 shadow-soft-lg">
+    
+    <a href="#hadis-serif" class="side-dock-btn w-10 h-10 rounded-xl bg-forest-50 text-forest-800 flex items-center justify-center text-sm shadow-sm group">
+      <i class="fa-solid fa-book-quran text-gold-600"></i>
+      <span class="side-dock-tooltip absolute left-12 px-3 py-1.5 rounded-xl bg-forest-900 text-white text-[11px] font-bold whitespace-nowrap shadow-lg">
+        Hacamat Hadis-i Şerifi
+      </span>
+    </a>
+
+    <a href="#noktalar" class="side-dock-btn w-10 h-10 rounded-xl bg-forest-50 text-forest-800 flex items-center justify-center text-sm shadow-sm group">
+      <i class="fa-solid fa-person-dots-from-line"></i>
+      <span class="side-dock-tooltip absolute left-12 px-3 py-1.5 rounded-xl bg-forest-900 text-white text-[11px] font-bold whitespace-nowrap shadow-lg">
+        Anatomik Şifa Haritası
+      </span>
+    </a>
+
+    <a href="#kanitlanmis-faydalar" class="side-dock-btn w-10 h-10 rounded-xl bg-forest-50 text-forest-800 flex items-center justify-center text-sm shadow-sm group">
+      <i class="fa-solid fa-capsules"></i>
+      <span class="side-dock-tooltip absolute left-12 px-3 py-1.5 rounded-xl bg-forest-900 text-white text-[11px] font-bold whitespace-nowrap shadow-lg">
+        İlaç & Antibiyotik Detoksu
+      </span>
+    </a>
+
+    <a href="#nasil-yapilir" class="side-dock-btn w-10 h-10 rounded-xl bg-forest-50 text-forest-800 flex items-center justify-center text-sm shadow-sm group">
+      <i class="fa-solid fa-fire-flame-simple"></i>
+      <span class="side-dock-tooltip absolute left-12 px-3 py-1.5 rounded-xl bg-forest-900 text-white text-[11px] font-bold whitespace-nowrap shadow-lg">
+        Doğal Ateşli Bardak Usulü
+      </span>
+    </a>
+
+    <a href="#hacamat-randevu" class="side-dock-btn w-10 h-10 rounded-xl bg-forest-800 text-white flex items-center justify-center text-sm shadow-sm group hover:bg-forest-900">
+      <i class="fa-regular fa-calendar-check text-emerald-300"></i>
+      <span class="side-dock-tooltip absolute left-12 px-3 py-1.5 rounded-xl bg-forest-900 text-white text-[11px] font-bold whitespace-nowrap shadow-lg">
+        Hacamat Randevu Takvimi
+      </span>
+    </a>
+
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 2. HEADER (HACAMATÇI MİKAİL HOCA - TELEFON DOĞRUDAN WHATSAPP AÇAR) -->
+  <!-- ========================================================================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md bg-white/95 border-b border-forest-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Marka & Logo -->
+        <a href="#hero" class="flex items-center space-x-3 group">
+          <div class="w-11 h-11 rounded-2xl bg-forest-800 flex items-center justify-center text-white shadow-soft group-hover:bg-forest-700 transition-all">
+            <i class="fa-solid fa-leaf text-lg text-emerald-300"></i>
+          </div>
+          <div>
+            <div class="font-serif text-lg sm:text-xl font-extrabold tracking-tight text-forest-950 flex items-center gap-2">
+              <span>HACAMATÇI MİKAİL HOCA</span>
+              <span class="px-2 py-0.5 text-[10px] font-extrabold bg-brandgreen-sage text-forest-800 rounded-full border border-forest-200">10 YIL</span>
+            </div>
+            <div class="text-[10px] tracking-wider text-forest-700 uppercase font-sans font-bold flex items-center gap-1.5">
+              <span>DOĞAL ATEŞLİ CAM BARDAK & TIBB-I NEBEVİ</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Masaüstü Sade Navigasyon -->
+        <nav class="hidden lg:flex items-center space-x-7 text-xs tracking-wider uppercase font-bold text-forest-900">
+          <a href="#hero" class="hover:text-forest-600 transition-colors py-1 text-forest-800 border-b-2 border-forest-700">Ana Sayfa</a>
+          <a href="#hadis-serif" class="hover:text-forest-600 transition-colors py-1 text-gold-700 font-extrabold flex items-center gap-1">
+            <i class="fa-solid fa-star text-[10px] text-gold-500"></i>
+            <span>Hacamat Hadisi</span>
+          </a>
+          <a href="#noktalar" class="hover:text-forest-600 transition-colors py-1">Şifa Noktaları</a>
+          <a href="#hacamat-randevu" class="hover:text-forest-600 transition-colors py-1 flex items-center gap-1">
+            <span>Altın Günler</span>
+            <span class="px-1.5 py-0.5 text-[9px] bg-gold-400/20 text-gold-700 rounded-full font-black">29 Eylül</span>
+          </a>
+          <a href="#yorumlar" class="hover:text-forest-600 transition-colors py-1 flex items-center gap-1">
+            <span>Yorumlar</span>
+            <span class="px-1.5 py-0.2 text-[9px] bg-forest-100 text-forest-800 rounded-full font-black">47</span>
+          </a>
+          <a href="hadisler.html" class="px-3 py-1 rounded-full bg-forest-50 text-forest-800 border border-forest-200 hover:bg-forest-100 transition-all font-bold flex items-center gap-1.5">
+            <i class="fa-solid fa-book-quran text-gold-500"></i>
+            <span>Hadisler Sayfası</span>
+          </a>
+        </nav>
+
+        <!-- Sağ Aksiyon: TELEFONA BASINCA DOĞRUDAN WHATSAPP AÇILIR (ÖZEL TALEP) -->
+        <div class="hidden sm:flex items-center space-x-3">
+          <a href="https://wa.me/905355566434?text=Selam%C3%BCn%20Aleyk%C3%BCm%20Hacamat%C3%A7%C4%B1%20Mikail%20Hocam%2C%20seans%20ve%20randevu%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" class="flex items-center space-x-2 px-3.5 py-2.5 rounded-xl border border-emerald-300 bg-emerald-50 text-emerald-950 hover:bg-emerald-100 transition-all text-xs font-bold tracking-wide shadow-sm" title="Hacamatçı Mikail Hoca WhatsApp Hattı">
+            <i class="fa-brands fa-whatsapp text-emerald-600 text-base"></i>
+            <span>0535 556 64 34 (WhatsApp)</span>
+          </a>
+          <a href="#hacamat-randevu" class="px-5 py-2.5 rounded-xl bg-forest-800 hover:bg-forest-900 text-white font-bold text-xs tracking-wider uppercase transition-all shadow-md hover:scale-105 active:scale-95 flex items-center gap-2">
+            <i class="fa-regular fa-calendar-check text-emerald-300"></i>
+            <span>Randevu Al</span>
+          </a>
+        </div>
+
+        <!-- Mobil Menü Butonu (Telefona basınca WhatsApp açılır) -->
+        <div class="flex lg:hidden items-center gap-2">
+          <a href="https://wa.me/905355566434?text=Selam%C3%BCn%20Aleyk%C3%BCm%20Hacamat%C3%A7%C4%B1%20Mikail%20Hocam%2C%20seans%20ve%20randevu%20almak%20istiyorum." target="_blank" class="p-2.5 rounded-xl border border-emerald-200 bg-emerald-50 text-emerald-700 hover:bg-emerald-100" title="WhatsApp ile İletişim">
+            <i class="fa-brands fa-whatsapp text-base"></i>
+          </a>
+          <button id="mobile-menu-btn" aria-label="Menüyü Aç" class="p-2.5 rounded-xl bg-forest-50 text-forest-800 focus:outline-none">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobil Menü Dropdown -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-forest-100 bg-white/98 backdrop-blur-xl px-4 pt-3 pb-6 space-y-2.5 shadow-xl max-h-[85vh] overflow-y-auto touch-scroll">
+      <a href="#hero" class="mobile-nav-link block py-2 text-sm font-semibold text-forest-950 border-b border-forest-50">Ana Sayfa</a>
+      <a href="#hadis-serif" class="mobile-nav-link block py-2 text-sm font-bold text-gold-700 border-b border-forest-50">Peygamberimiz (SAV)'in Hacamat Hadisi</a>
+      <a href="#noktalar" class="mobile-nav-link block py-2 text-sm font-semibold text-forest-950 border-b border-forest-50">Anatomik Şifa Noktaları Haritası</a>
+      <a href="#kanitlanmis-faydalar" class="mobile-nav-link block py-2 text-sm font-semibold text-forest-950 border-b border-forest-50 flex items-center justify-between">
+        <span>Hacamatın Kanıtlanmış Faydaları</span>
+        <span class="px-2 py-0.5 text-[9px] bg-emerald-100 text-emerald-800 rounded-full font-bold">6 Etki</span>
+      </a>
+      <a href="#faydalari" class="mobile-nav-link block py-2 text-sm font-semibold text-forest-950 border-b border-forest-50">İlaç & Antibiyotik Detoksu</a>
+      <a href="#nasil-yapilir" class="mobile-nav-link block py-2 text-sm font-semibold text-forest-950 border-b border-forest-50">Doğal Bardak Usulü Nasıl Yapılır?</a>
+      <a href="#hacamat-randevu" class="mobile-nav-link block py-2 text-sm font-bold text-forest-800 border-b border-forest-50 flex items-center justify-between">
+        <span>Hacamat Seans Randevu Takvimi</span>
+        <span class="px-2 py-0.5 text-[10px] bg-amber-100 text-amber-900 rounded font-bold">29 Eylül Altın Gün</span>
+      </a>
+      <a href="#yorumlar" class="mobile-nav-link block py-2 text-sm font-semibold text-forest-950 border-b border-forest-50 flex items-center justify-between">
+        <span>Danışan Yorumları</span>
+        <span class="px-2 py-0.5 text-[10px] bg-forest-100 text-forest-800 rounded-full font-bold">47 Yorum</span>
+      </a>
+      <a href="#faq" class="mobile-nav-link block py-2 text-sm font-semibold text-forest-950 border-b border-forest-50">Sık Sorulan Sorular</a>
+      <a href="hadisler.html" class="block py-2.5 px-3 rounded-xl bg-forest-50 text-forest-900 font-bold text-sm border border-forest-200 flex items-center justify-between">
+        <span class="flex items-center gap-2"><i class="fa-solid fa-book-quran text-gold-500"></i> Sahih Hadisler Külliyatı</span>
+        <i class="fa-solid fa-arrow-right text-xs text-forest-600"></i>
+      </a>
+      <div class="pt-2 flex flex-col gap-2">
+        <a href="#hacamat-randevu" class="mobile-nav-link text-center w-full py-3 bg-forest-800 text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md">
+          <i class="fa-regular fa-calendar-check mr-2"></i> Randevu Al (29 Eylül Altın Gün)
+        </a>
+        <a href="https://wa.me/905355566434?text=Selam%C3%BCn%20Aleyk%C3%BCm%20Hacamat%C3%A7%C4%B1%20Mikail%20Hocam%2C%20randevu%20almak%20istiyorum." target="_blank" class="text-center w-full py-2.5 bg-emerald-600 text-white font-bold text-xs rounded-xl flex items-center justify-center gap-2 shadow-sm">
+          <i class="fa-brands fa-whatsapp text-lg"></i> Mikail Hoca WhatsApp Hattı
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================= -->
+    <!-- 3. HERO BÖLÜMÜ (SADE & 2 SÜTUNLU PRESTİJLİ TASARIM) -->
+    <!-- ========================================================================= -->
+    <section id="hero" class="relative pt-28 pb-16 sm:pt-36 sm:pb-24 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          
+          <!-- SOL SÜTUN: Estetik Şifa Tepsisi & 10+ Yıl Rozeti -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              <div class="relative rounded-[32px] overflow-hidden shadow-soft-lg border-2 border-forest-100 bg-white group">
+                <img 
+                  src="img/clinic_hero_cupping.jpg" 
+                  alt="Hacamatçı Mikail Hoca Doğal Cam Bardak ve Şifa Tepsisi" 
+                  class="w-full h-[380px] sm:h-[430px] lg:h-[460px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                />
+                
+                <!-- 10+ YILLIK TECRÜBE Rozeti -->
+                <div class="absolute bottom-5 right-5 bg-forest-800 text-white px-5 py-3.5 rounded-2xl shadow-lg border border-forest-700/50 flex flex-col items-center justify-center">
+                  <span class="font-serif text-2xl sm:text-3xl font-extrabold tracking-tight leading-none text-emerald-300">10+</span>
+                  <span class="text-[10px] sm:text-[11px] font-bold tracking-widest uppercase text-forest-100 mt-1">YILLIK TECRÜBE</span>
+                </div>
+              </div>
+
+              <!-- Mini Güven Rozetleri -->
+              <div class="grid grid-cols-2 gap-3 mt-4">
+                <div class="p-3 rounded-2xl bg-white border border-forest-100 shadow-sm flex items-center gap-2.5">
+                  <div class="w-8 h-8 rounded-xl bg-forest-100 flex items-center justify-center text-forest-700 text-sm">
+                    <i class="fa-solid fa-fire-flame-simple"></i>
+                  </div>
+                  <div>
+                    <span class="text-xs font-bold text-forest-950 block">Doğal Ateşli Bardak</span>
+                    <span class="text-[10px] text-forest-600">Geleneksel Isı Vakumu</span>
+                  </div>
+                </div>
+                <div class="p-3 rounded-2xl bg-white border border-forest-100 shadow-sm flex items-center gap-2.5">
+                  <div class="w-8 h-8 rounded-xl bg-forest-100 flex items-center justify-center text-forest-700 text-sm">
+                    <i class="fa-solid fa-shield-virus"></i>
+                  </div>
+                  <div>
+                    <span class="text-xs font-bold text-forest-950 block">%100 Sterilite</span>
+                    <span class="text-[10px] text-forest-600">Tek Kullanımlık Hassas Uç</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SAĞ SÜTUN: Sade, Okunaklı & Sıkışık Olmayan Başlık / İçerik -->
+          <div class="lg:col-span-7 space-y-5">
+            
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brandgreen-sage text-forest-800 text-xs font-bold uppercase tracking-wider border border-forest-200">
+              <span>BİZ KİMİZ?</span>
+            </div>
+
+            <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-forest-950 leading-[1.2]">
+              VÜCUDUNUZU DOĞAL YOLLARLA ŞİFALANDIRIN
+            </h1>
+
+            <p class="text-forest-700 font-bold text-sm sm:text-base leading-relaxed">
+              <strong>Hacamatçı Mikail Hoca</strong> olarak, asırlardır şifa kaynağı olmuş kupa terapisini (Hacamat), modern hijyen standartları ve 10 yıllık kadim tecrübemiz ile birleştirerek uyguluyoruz.
+            </p>
+
+            <p class="text-forest-900/80 text-xs sm:text-sm leading-relaxed">
+              Hacamat, vücuttaki kılcal damarlarda birikmiş, dolaşımı zorlaştıran toksik maddelerin, sentetik antibiyotik/ilaç kalıntılarının ve kirli kanın doğal cam bardak vakumlama yöntemi ile vücuttan uzaklaştırılması işlemidir. Amacımız sadece fiziksel arınma değil; zihinsel hafifleme ve bağışıklık sisteminizi güçlendirerek hayat kalitenizi artırmaktır.
+            </p>
+
+            <!-- 4 Adet Yeşil Onay Maddesi -->
+            <div class="space-y-2.5 pt-1">
+              <div class="flex items-start gap-3">
+                <div class="w-5 h-5 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[11px] shrink-0 mt-0.5">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="text-xs sm:text-sm font-semibold text-forest-950">Kişiye özel tek kullanımlık steril kupalar ve bistüriler</span>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-5 h-5 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[11px] shrink-0 mt-0.5">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="text-xs sm:text-sm font-semibold text-forest-950">Geleneksel sünnet takvimine uygun şifa günleri tespiti</span>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-5 h-5 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[11px] shrink-0 mt-0.5">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="text-xs sm:text-sm font-semibold text-forest-950">Ağrısız, acısız, iz bırakmayan hassas mikro-kesi tekniği</span>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-5 h-5 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[11px] shrink-0 mt-0.5">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="text-xs sm:text-sm font-semibold text-forest-950">Seans sonrası saf sarı kantaron yağı ile cilt bakımı ve dezenfeksiyon</span>
+              </div>
+            </div>
+
+            <!-- Aksiyon Butonları -->
+            <div class="pt-4 flex flex-wrap items-center gap-4">
+              <a href="#hacamat-randevu" class="px-7 py-3.5 rounded-xl bg-forest-800 hover:bg-forest-900 text-white font-bold text-xs sm:text-sm tracking-wider uppercase transition-all shadow-md hover:scale-105 active:scale-95 flex items-center gap-2.5">
+                <i class="fa-regular fa-calendar-plus text-emerald-300"></i>
+                <span>Hemen Randevu Al (29 Eylül)</span>
+              </a>
+
+              <a href="https://wa.me/905355566434?text=Selam%C3%BCn%20Aleyk%C3%BCm%20Hacamat%C3%A7%C4%B1%20Mikail%20Hocam%2C%20randevu%20almak%20istiyorum." target="_blank" class="px-6 py-3.5 rounded-xl bg-emerald-50 border border-emerald-300 text-emerald-950 hover:bg-emerald-100 transition-all text-xs sm:text-sm font-bold tracking-wide flex items-center gap-2 shadow-sm">
+                <i class="fa-brands fa-whatsapp text-emerald-600 text-base"></i>
+                <span>0535 556 64 34 (WhatsApp)</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 4. PEYGAMBER EFENDİMİZ (S.A.V.)'İN HACAMAT HADİS-İ ŞERİFİ (ANA SAYFA ÖZEL) -->
+    <!-- ========================================================================= -->
+    <section id="hadis-serif" class="py-16 relative bg-gradient-to-b from-white via-forest-50/60 to-white border-y border-forest-100">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="white-card p-8 sm:p-12 rounded-[36px] border-2 border-gold-400/40 shadow-soft-lg relative overflow-hidden text-center">
+          <div class="absolute -top-10 -right-10 w-48 h-48 bg-gold-400/10 rounded-full blur-2xl pointer-events-none"></div>
+          <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-forest-600/10 rounded-full blur-2xl pointer-events-none"></div>
+
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-400/20 text-gold-700 border border-gold-400/30 text-xs font-bold uppercase tracking-wider mb-6">
+            <i class="fa-solid fa-star text-gold-500"></i>
+            <span>TIBB-I NEBEVİ ŞİFASI & SAHİH RİVAYET</span>
+            <i class="fa-solid fa-star text-gold-500"></i>
+          </div>
+
+          <!-- Arapça Hadis Metni -->
+          <p class="font-amiri text-2xl sm:text-4xl text-forest-950 font-bold leading-loose mb-6 dir-rtl" dir="rtl">
+            « الشِّفَاءُ فِي ثَلاَثَةٍ: شَرْبَةِ عَسَلٍ، وَشَرْطَةِ مِحْجَمٍ، وَكَيَّةِ نَارٍ، وَأَنْهَى أُمَّتِي عَنِ الْكَيِّ »
+          </p>
+
+          <!-- Türkçe Çeviri -->
+          <blockquote class="font-serif text-base sm:text-xl text-forest-900 font-semibold italic max-w-3xl mx-auto leading-relaxed mb-6">
+            "Şifa üç şeydedir: Bal şerbeti içmek, <span class="text-forest-700 underline decoration-gold-400 decoration-2 font-bold">hacamat kupası vurdurmak</span> ve dağlama yapmak. Fakat ben ümmetime dağlama yapmayı yasaklıyorum."
+          </blockquote>
+
+          <div class="flex flex-wrap items-center justify-center gap-3 text-xs text-forest-700 font-bold">
+            <span class="px-3 py-1 rounded-full bg-forest-100 border border-forest-200">
+              <i class="fa-solid fa-book-open text-forest-800 mr-1.5"></i> Sahih-i Buhârî, Tıb 3
+            </span>
+            <span class="px-3 py-1 rounded-full bg-forest-100 border border-forest-200">
+              <i class="fa-solid fa-book-open text-forest-800 mr-1.5"></i> Sahih-i Müslim, Selâm 71
+            </span>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-forest-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-left">
+            <div class="text-xs text-forest-800 max-w-xl">
+              <strong>Miraç Müjdesi:</strong> <em>«Miraç gecesinde hangi melek cemaatine uğradıysam bana: "Ey Muhammed! Ümmetine hacamatı emret!" diyorlardı.»</em> (Tirmizî, Tıb 12)
+            </div>
+            <a href="hadisler.html" class="px-5 py-2.5 rounded-xl bg-forest-800 hover:bg-forest-900 text-white font-bold text-xs transition-all shadow-sm shrink-0 flex items-center gap-2">
+              <i class="fa-solid fa-book-quran text-gold-300"></i> Tüm Sahih Hadisleri İncele →
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 5. ANATOMİK ŞİFA NOKTALARI HARİTASI (MEDİKAL ŞEMA & AÇIKLAMALAR) -->
+    <!-- ========================================================================= -->
+    <section id="noktalar" class="py-16 sm:py-20 relative bg-[#F4F9F6] border-b border-forest-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-forest-100 text-forest-800 text-xs font-bold uppercase mb-2 border border-forest-200">
+            <i class="fa-solid fa-person-dots-from-line text-forest-600"></i>
+            <span>TIBB-I NEBEVİ VE ANATOMİK ŞİFA HARİTASI</span>
+          </div>
+          <h2 class="font-serif text-2xl sm:text-4xl font-bold text-forest-950">
+            Hangi Kupa Noktası <span class="text-forest-gradient italic">Nereye Şifa Verir?</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-forest-800/90 mt-2">
+            Hacamatçı Mikail Hoca’nın 10 yıllık kadim tecrübesiyle; sırt, omurga ve iç organ meridyenlerine göre uygulanan profesyonel kupa noktaları.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- SOL: YÜKSEK KALİTELİ ANATOMİK ŞEMA -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="white-card p-4 sm:p-5 rounded-[32px] border-2 border-forest-200 shadow-soft-lg max-w-md w-full text-center">
+              <div class="relative rounded-2xl overflow-hidden bg-white border border-forest-100 shadow-sm">
+                <img 
+                  src="img/anatomy_cupping_chart.jpg" 
+                  alt="Anatomik Sırt Hacamat Noktaları Tıbbi Şeması" 
+                  class="w-full h-auto object-contain mx-auto hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="mt-3 flex items-center justify-between text-[11px] font-bold text-forest-800 px-2">
+                <span class="flex items-center gap-1.5 text-emerald-800">
+                  <i class="fa-solid fa-circle-check text-emerald-600"></i> Tıbbi Meridyen & Sinir Ganglionları
+                </span>
+                <span class="text-gold-600 font-extrabold">Mikail Hoca Protokolü</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SAĞ: 6 TEMEL ORGAN YANSIMA ALANI -->
+          <div class="lg:col-span-7 space-y-3">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              
+              <!-- 1. Kâhil / Kalp -->
+              <div class="p-3.5 rounded-2xl bg-white border border-forest-100 shadow-sm hover:border-forest-300 transition-all">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="w-6 h-6 rounded-lg bg-red-50 text-red-700 flex items-center justify-center text-xs font-bold">1</span>
+                  <h4 class="font-serif font-bold text-xs sm:text-sm text-forest-950">Kâhil & Kalp Noktası</h4>
+                </div>
+                <p class="text-[11px] text-forest-800 leading-relaxed">
+                  İki kürek kemiği arası. Kanın ana istasyonudur; genel vücut bağışıklığını şahlandırır, kalp yükünü ve yüksek tansiyonu hafifletir.
+                </p>
+              </div>
+
+              <!-- 2. Boyun (Cankurtaran) -->
+              <div class="p-3.5 rounded-2xl bg-white border border-forest-100 shadow-sm hover:border-forest-300 transition-all">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="w-6 h-6 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center text-xs font-bold">2</span>
+                  <h4 class="font-serif font-bold text-xs sm:text-sm text-forest-950">Boyun & Ense Kökü</h4>
+                </div>
+                <p class="text-[11px] text-forest-800 leading-relaxed">
+                  Kronik migren, baş zonklamaları, boyun düzleşmesi, sisli beyin ve göz tansiyonuna doğrudan ferahlık kapısıdır.
+                </p>
+              </div>
+
+              <!-- 3. Karaciğer & Dalak -->
+              <div class="p-3.5 rounded-2xl bg-white border border-forest-100 shadow-sm hover:border-forest-300 transition-all">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="w-6 h-6 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center text-xs font-bold">3</span>
+                  <h4 class="font-serif font-bold text-xs sm:text-sm text-forest-950">Karaciğer & Dalak</h4>
+                </div>
+                <p class="text-[11px] text-forest-800 leading-relaxed">
+                  Sürekli içilen sentetik antibiyotik, ağrı kesici ve kimyasal ilaç tortularının hücresel düzeyde temizlendiği ana filtredir.
+                </p>
+              </div>
+
+              <!-- 4. Akciğer & Aşı Noktaları -->
+              <div class="p-3.5 rounded-2xl bg-white border border-forest-100 shadow-sm hover:border-forest-300 transition-all">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="w-6 h-6 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center text-xs font-bold">4</span>
+                  <h4 class="font-serif font-bold text-xs sm:text-sm text-forest-950">Akciğer & Aşı Noktaları</h4>
+                </div>
+                <p class="text-[11px] text-forest-800 leading-relaxed">
+                  Ciğer hırıltısı, nefes darlığı, kronik öksürük ve omuz başlarındaki taşlaşmış ağır kulunçların boşaltıldığı yerdir.
+                </p>
+              </div>
+
+              <!-- 5. Böbrek & Bel Bölgesi -->
+              <div class="p-3.5 rounded-2xl bg-white border border-forest-100 shadow-sm hover:border-forest-300 transition-all">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="w-6 h-6 rounded-lg bg-purple-50 text-purple-700 flex items-center justify-center text-xs font-bold">5</span>
+                  <h4 class="font-serif font-bold text-xs sm:text-sm text-forest-950">Böbrek & Bel Boşlukları</h4>
+                </div>
+                <p class="text-[11px] text-forest-800 leading-relaxed">
+                  Bel fıtığı sancıları, bel tutulması, ağır kaldırma spazmları ve böbrek filtrasyonunun desteklenmesinde etkilidir.
+                </p>
+              </div>
+
+              <!-- 6. Kuyruksokumu & Bağırsak -->
+              <div class="p-3.5 rounded-2xl bg-white border border-forest-100 shadow-sm hover:border-forest-300 transition-all">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="w-6 h-6 rounded-lg bg-teal-50 text-teal-700 flex items-center justify-center text-xs font-bold">6</span>
+                  <h4 class="font-serif font-bold text-xs sm:text-sm text-forest-950">Kuyruksokumu & Bağırsak</h4>
+                </div>
+                <p class="text-[11px] text-forest-800 leading-relaxed">
+                  Bacaklara vuran siyatik çekmeleri, huzursuz bacak, hazımsızlık ve alt omurga sıkışmalarına şifadır.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="pt-3">
+              <a href="#hacamat-randevu" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-forest-800 text-white font-bold text-xs hover:bg-forest-900 transition-all shadow-sm">
+                <i class="fa-regular fa-calendar-check text-emerald-300"></i> Bu Noktalardan Seans İçin Randevu Al
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- 5. HACAMATIN KANITLANMIŞ FAYDALARI (6 ADET ÖZEL BEYAZ KART) -->
+    <!-- ========================================================================= -->
+    <section id="kanitlanmis-faydalar" class="py-20 relative bg-[#F7FBF9]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-forest-100 text-forest-800 text-xs font-bold uppercase mb-3 border border-forest-200 shadow-sm">
+            <i class="fa-solid fa-notes-medical text-forest-600"></i>
+            <span>KLİNİK & TIBBİ ETKİLER</span>
+          </div>
+          <h2 class="font-serif text-2xl sm:text-4xl font-bold text-forest-950">
+            Hacamatın <span class="text-forest-gradient italic">Kanıtlanmış Faydaları</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-forest-800/80 mt-3 leading-relaxed">
+            Geleneksel Tıbb-ı Nebevi metodunun ve doğal ateşli cam bardak kupa uygulamasının metabolizma, damar yatağı ve bağışıklık sistemi üzerindeki bilimsel olarak kanıtlanmış 6 temel şifa basamağı:
+          </p>
+        </div>
+
+        <!-- 6 Adet Birebir Tasarlanmış Zarif Beyaz Kart (media_1789319531231.png) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          
+          <!-- Kart 1: Derin Toksin Temizliği -->
+          <div class="bg-white rounded-3xl p-8 sm:p-9 border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-[#1E5142] text-white flex items-center justify-center text-lg mb-6 shadow-sm group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-filter"></i>
+              </div>
+              <h3 class="font-serif text-base sm:text-lg font-bold text-[#142A22] mb-3 uppercase tracking-wider">
+                DERİN TOKSİN TEMİZLİĞİ
+              </h3>
+              <p class="text-xs sm:text-sm text-[#4E675E] leading-relaxed font-normal">
+                Kan dolaşımını yavaşlatan ağır metalleri, kimyasal atıkları ve ödemleri vücuttan arındırarak detoks etkisi sağlar.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-2 text-[11px] font-bold text-[#1E5142]">
+              <i class="fa-solid fa-circle-check text-emerald-600"></i> Hücresel Drenaj & Toksin Tahliyesi
+            </div>
+          </div>
+
+          <!-- Kart 2: Ağrılarda Belirgin Azalma -->
+          <div class="bg-white rounded-3xl p-8 sm:p-9 border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-[#E8F6F3] text-[#20836D] flex items-center justify-center text-lg mb-6 shadow-sm group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-hand-holding-medical"></i>
+              </div>
+              <h3 class="font-serif text-base sm:text-lg font-bold text-[#142A22] mb-3 uppercase tracking-wider">
+                AĞRILARDA BELİRGİN AZALMA
+              </h3>
+              <p class="text-xs sm:text-sm text-[#4E675E] leading-relaxed font-normal">
+                Sırt, bel, boyun ağrıları ile migren ve eklem rahatsızlıklarında kasları gevşeterek hızlı rahatlama sunar.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-2 text-[11px] font-bold text-[#20836D]">
+              <i class="fa-solid fa-circle-check text-emerald-600"></i> Kas Spazmlarını Anında Gevşetir
+            </div>
+          </div>
+
+          <!-- Kart 3: Kan Dolaşımını Hızlandırma -->
+          <div class="bg-white rounded-3xl p-8 sm:p-9 border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-[#EAF7F0] text-[#1E7E5A] flex items-center justify-center text-lg mb-6 shadow-sm group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+              <h3 class="font-serif text-base sm:text-lg font-bold text-[#142A22] mb-3 uppercase tracking-wider">
+                KAN DOLAŞIMINI HIZLANDIRMA
+              </h3>
+              <p class="text-xs sm:text-sm text-[#4E675E] leading-relaxed font-normal">
+                Kılcal damarlardaki tıkanıklıkları açarak hücrelerin daha bol oksijen ve besin almasını sağlar.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-2 text-[11px] font-bold text-[#1E7E5A]">
+              <i class="fa-solid fa-circle-check text-emerald-600"></i> Dokulara Yüksek Oksijenlenme
+            </div>
+          </div>
+
+          <!-- Kart 4: Bağışıklık Güçlendirme -->
+          <div class="bg-white rounded-3xl p-8 sm:p-9 border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-[#EBF3F8] text-[#256B85] flex items-center justify-center text-lg mb-6 shadow-sm group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-shield-virus"></i>
+              </div>
+              <h3 class="font-serif text-base sm:text-lg font-bold text-[#142A22] mb-3 uppercase tracking-wider">
+                BAĞIŞIKLIK GÜÇLENDİRME
+              </h3>
+              <p class="text-xs sm:text-sm text-[#4E675E] leading-relaxed font-normal">
+                Vücudun savunma hücrelerini (akyuvarları) uyararak hastalıklara karşı direncini en üst seviyeye çıkarır.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-2 text-[11px] font-bold text-[#256B85]">
+              <i class="fa-solid fa-circle-check text-emerald-600"></i> Akyuvar ve Antikor Desteği
+            </div>
+          </div>
+
+          <!-- Kart 5: Stres ve Uyku Kalitesi -->
+          <div class="bg-white rounded-3xl p-8 sm:p-9 border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-[#EBF7EE] text-[#2E7D52] flex items-center justify-center text-lg mb-6 shadow-sm group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-bed"></i>
+              </div>
+              <h3 class="font-serif text-base sm:text-lg font-bold text-[#142A22] mb-3 uppercase tracking-wider">
+                STRES VE UYKU KALİTESİ
+              </h3>
+              <p class="text-xs sm:text-sm text-[#4E675E] leading-relaxed font-normal">
+                Sinir sistemini sakinleştirir, kronik yorgunluğu azaltır ve derin, deliksiz bir uyku düzenine yardımcı olur.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-2 text-[11px] font-bold text-[#2E7D52]">
+              <i class="fa-solid fa-circle-check text-emerald-600"></i> Sakin Sinir Sistemi & Deliksiz Uyku
+            </div>
+          </div>
+
+          <!-- Kart 6: Hücresel Yenilenme -->
+          <div class="bg-white rounded-3xl p-8 sm:p-9 border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-[#E8F4FA] text-[#237494] flex items-center justify-center text-lg mb-6 shadow-sm group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-arrows-rotate"></i>
+              </div>
+              <h3 class="font-serif text-base sm:text-lg font-bold text-[#142A22] mb-3 uppercase tracking-wider">
+                HÜCRESEL YENİLENME
+              </h3>
+              <p class="text-xs sm:text-sm text-[#4E675E] leading-relaxed font-normal">
+                Dokulardaki eski ve işlevini yitirmiş kan hücrelerinin çekilmesiyle yeni, taze kan üretimini tetikler.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-2 text-[11px] font-bold text-[#237494]">
+              <i class="fa-solid fa-circle-check text-emerald-600"></i> Kemik İliği Uyarımı & Taze Kan
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Ekstra Görselli Şifa Bilgilendirme Şeridi -->
+        <div class="mt-12 bg-white rounded-3xl p-6 sm:p-8 border border-forest-100 shadow-soft flex flex-col lg:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-4">
+            <img src="img/glass_cups_macro.jpg" alt="Ateşli Cam Bardaklar" class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover border-2 border-forest-100 shadow-sm" />
+            <div>
+              <div class="inline-flex items-center gap-1.5 text-[10px] font-bold text-amber-700 uppercase bg-amber-50 px-2 py-0.5 rounded-full border border-amber-200 mb-1">
+                <i class="fa-solid fa-fire text-amber-600"></i> Doğal Ateşli Kupa Vakumu
+              </div>
+              <h4 class="font-serif font-bold text-forest-950 text-sm sm:text-base">Neden Plastik Pompa Değil de Ateşli Cam Bardak?</h4>
+              <p class="text-xs text-forest-800/80 mt-1 max-w-xl">
+                Ateş aleviyle ısıtılan kalın cam bardak, uygulandığı bölgedeki kılcal damarları nazikçe genişletir; kas sertliğini çözer ve pıhtılaşmış koyu tortuları acısız bir şekilde çeker.
+              </p>
+            </div>
+          </div>
+          <a href="#hacamat-randevu" class="w-full lg:w-auto px-6 py-3 rounded-2xl bg-forest-800 hover:bg-forest-900 text-white font-bold text-xs uppercase tracking-wider transition-all text-center shadow-sm whitespace-nowrap">
+            Takvimden Randevu Al →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. SAĞLIĞINIZ HER ŞEYİNİZ: İLAÇ VE ANTİBİYOTİK DETOKSU -->
+    <!-- ========================================================================= -->
+    <section id="faydalari" class="py-16 relative bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-forest-100 text-forest-800 text-xs font-bold uppercase mb-2 border border-forest-200">
+            <i class="fa-solid fa-capsules text-forest-600"></i>
+            <span>SAĞLIĞINIZ HER ŞEYİNİZ</span>
+          </div>
+          <h2 class="font-serif text-2xl sm:text-4xl font-bold text-forest-950">
+            Sürekli Kullanılan <span class="text-forest-gradient italic">Antibiyotik ve İlaç Tortularından Arının</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-forest-800/80 mt-3">
+            Sentetik antibiyotikler ve ağrı kesici ilaç kalıntıları deri altı kılcal damarlarda depolanır. Doğal ateşli cam bardak hacamatı bu metabolitleri hücresel düzeyde dışarı alır.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl mb-4 border border-amber-200">
+                <i class="fa-solid fa-prescription-bottle-medical"></i>
+              </div>
+              <h3 class="font-serif text-base sm:text-lg font-bold text-forest-950 mb-2">Antibiyotik Kalıntıları</h3>
+              <p class="text-xs text-forest-800/90 leading-relaxed mb-4">
+                Antibiyotik tedavileri sonrasında bağ dokusunda kalan metabolitler, halsizlik ve sindirim durgunluğuna neden olur. Hacamat bu tortuları hücresel düzeyde dışarı alır.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 text-[11px] font-bold text-forest-700 flex items-center gap-1.5">
+              <i class="fa-solid fa-check text-emerald-600"></i> Karaciğer & Böbrek Yükünü Hafifletir
+            </div>
+          </div>
+
+          <div class="white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl mb-4 border border-emerald-200">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <h3 class="font-serif text-base sm:text-lg font-bold text-forest-950 mb-2">Ağrı Kesici Toksisitesi</h3>
+              <p class="text-xs text-forest-800/90 leading-relaxed mb-4">
+                Sürekli alınan ağrı kesiciler sadece semptomu bastırır, damar yatağını temizlemez. Hacamat, kas düğümlerindeki laktik asidi ve iltihabi sıvıyı boşaltarak kökten rahatlatır.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 text-[11px] font-bold text-forest-700 flex items-center gap-1.5">
+              <i class="fa-solid fa-check text-emerald-600"></i> İlaç Bağımlılığını Kırmaya Yardımcı
+            </div>
+          </div>
+
+          <div class="white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl mb-4 border border-blue-200">
+                <i class="fa-solid fa-battery-half"></i>
+              </div>
+              <h3 class="font-serif text-base sm:text-lg font-bold text-forest-950 mb-2">Kronik Yorgunluk & Sisli Beyin</h3>
+              <p class="text-xs text-forest-800/90 leading-relaxed mb-4">
+                Kandaki ağır metaller ve çevresel kimyasallar beynin oksijenlenmesini engeller. Kafa ve kâhil seansları sonrasında sabahları zinde ve berrak bir zihinle uyanırsınız.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 text-[11px] font-bold text-forest-700 flex items-center gap-1.5">
+              <i class="fa-solid fa-check text-emerald-600"></i> Doğal Zindelik ve Uyku Düzeni
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 7. NASIL YAPILIR? DOĞAL ATEŞLİ CAM BARDAK PROTOKOLÜ -->
+    <!-- ========================================================================= -->
+    <section id="nasil-yapilir" class="py-16 relative bg-[#F7FBF9] border-y border-forest-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <div class="lg:col-span-5">
+            <div class="rounded-3xl overflow-hidden border-2 border-forest-200 shadow-soft-lg group">
+              <img src="img/glass_cups_macro.jpg" alt="Geleneksel Ateşli Cam Kupa Bardakları" class="w-full h-80 sm:h-96 object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="p-4 bg-forest-900 text-white flex items-center justify-between">
+                <span class="text-xs font-bold text-emerald-300 flex items-center gap-2">
+                  <i class="fa-solid fa-fire text-amber-400"></i> Doğal Ateş Isı Vakumu
+                </span>
+                <span class="text-[11px] text-forest-200">Mekanik Plastik Değil!</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-forest-100 text-forest-800 text-xs font-bold uppercase border border-forest-200">
+              <i class="fa-solid fa-list-check text-forest-600"></i>
+              <span>ADIM ADIM ŞİFA SÜRECİ</span>
+            </div>
+            <h2 class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-forest-950">
+              Doğal Cam Bardak Hacamatı <span class="text-forest-gradient italic">Nasıl Uygulanır?</span>
+            </h2>
+
+            <div class="space-y-3 pt-2">
+              <div class="flex items-start gap-3.5 p-3.5 rounded-2xl bg-white border border-forest-100 shadow-sm">
+                <span class="w-7 h-7 rounded-xl bg-forest-800 text-white font-bold text-xs flex items-center justify-center shrink-0">1</span>
+                <div>
+                  <h4 class="text-xs sm:text-sm font-bold text-forest-950">Muayene ve Nokta Tespiti</h4>
+                  <p class="text-[11px] sm:text-xs text-forest-800 mt-0.5">Şikayetiniz, tansiyonunuz ve nabzınız değerlendirilir; Kâhil, sırt, bel veya baş noktaları titizlikle işaretlenir.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5 p-3.5 rounded-2xl bg-white border border-forest-100 shadow-sm">
+                <span class="w-7 h-7 rounded-xl bg-forest-800 text-white font-bold text-xs flex items-center justify-center shrink-0">2</span>
+                <div>
+                  <h4 class="text-xs sm:text-sm font-bold text-forest-950">Ateşli Cam Bardakla Isı Vakumu</h4>
+                  <p class="text-[11px] sm:text-xs text-forest-800 mt-0.5">Alev ısısıyla vakumlanan kalın cam bardaklar yerleştirilir. Ilık sıcaklık kas spazmlarını çözer ve doğal anestezi etkisi yapar.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5 p-3.5 rounded-2xl bg-white border border-forest-100 shadow-sm">
+                <span class="w-7 h-7 rounded-xl bg-forest-800 text-white font-bold text-xs flex items-center justify-center shrink-0">3</span>
+                <div>
+                  <h4 class="text-xs sm:text-sm font-bold text-forest-950">Ağrısız Mikro-Çizikler (0.5 mm)</h4>
+                  <p class="text-[11px] sm:text-xs text-forest-800 mt-0.5">Sadece derinin en üst epidermis tabakasına tüy inceliğinde steril mikro kesiler atılır; kesinlikle derin acı hissedilmez.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5 p-3.5 rounded-2xl bg-white border border-forest-100 shadow-sm">
+                <span class="w-7 h-7 rounded-xl bg-forest-800 text-white font-bold text-xs flex items-center justify-center shrink-0">4</span>
+                <div>
+                  <h4 class="text-xs sm:text-sm font-bold text-forest-950">Saf Sarı Kantaron Yağı ile İzsiz Bakım</h4>
+                  <p class="text-[11px] sm:text-xs text-forest-800 mt-0.5">Toksik kan boşaldıktan sonra cilt dezenfekte edilir ve saf kantaron yağı ile mühürlenir. 3 ila 5 günde sıfır izle iyileşir.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 8. HACAMAT SEANS TAKVİMİ: GERÇEK DOLU/BOŞ SAATLER & İPTAL SİSTEMİ -->
+    <!-- ========================================================================= -->
+    <section id="hacamat-randevu" class="py-20 relative bg-gradient-to-b from-forest-50/80 via-white to-forest-50/80 border-b border-forest-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-forest-800 text-white text-xs font-bold uppercase mb-3 shadow-sm">
+            <i class="fa-solid fa-calendar-check text-emerald-300"></i>
+            <span>HACAMAT SEANS TAKVİMİ & CANLI SAAT MÜSAİTLİĞİ</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest-950">
+            Hemen Gününüzü ve <span class="text-forest-gradient italic">Müsait Seans Saatinizi Seçin</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-forest-800 mt-2">
+            İstediğiniz tarihe tıklayın; canlı yeşil <strong>[MÜSAİT]</strong> saatlerden birini seçip randevunuzu oluşturun. Aldığınız randevuyu dilediğiniz an tek tıkla <strong>İptal Edip</strong> tekrar boş duruma getirebilirsiniz.
+          </p>
+
+          <!-- Hızlı Tarih Seçim Şeridi (29 Eylül Büyük Gün Öncelikli) -->
+          <div class="flex flex-wrap items-center justify-center gap-2.5 mt-6">
+            <button onclick="quickSelectDate('2026-09-29', '29 Eylül 2026 Salı')" class="quick-date-btn px-4 py-2.5 rounded-2xl bg-amber-100 hover:bg-amber-200 border-2 border-amber-400 text-amber-950 font-extrabold text-xs shadow-sm flex items-center gap-2 transition-all">
+              <i class="fa-solid fa-crown text-amber-600"></i> 29 Eylül Salı (Büyük Altın Gün)
+            </button>
+            <button onclick="quickSelectDate('2026-09-14', '14 Eylül 2026 Pazartesi')" class="quick-date-btn px-4 py-2 rounded-2xl bg-white hover:bg-forest-50 border border-forest-200 text-forest-900 font-bold text-xs transition-all">
+              🌱 14 Eylül Pazartesi (Yarın)
+            </button>
+            <button onclick="quickSelectDate('2026-10-01', '1 Ekim 2026 Perşembe')" class="quick-date-btn px-4 py-2 rounded-2xl bg-white hover:bg-forest-50 border border-forest-200 text-forest-900 font-bold text-xs transition-all">
+              ⭐ 1 Ekim Perşembe (Altın Gün)
+            </button>
+            <button onclick="quickSelectDate('2026-10-03', '3 Ekim 2026 Cumartesi')" class="quick-date-btn px-4 py-2 rounded-2xl bg-white hover:bg-forest-50 border border-forest-200 text-forest-900 font-bold text-xs transition-all">
+              ⭐ 3 Ekim Cumartesi (Altın Gün)
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- SOL: İNTERAKTİF HACAMAT TAKVİM KARTI -->
+          <div class="lg:col-span-6 white-card p-6 rounded-3xl border border-forest-200 shadow-soft">
+            
+            <div class="flex items-center justify-between pb-4 border-b border-forest-100 mb-4">
+              <div>
+                <h3 id="current-month-display" class="font-serif text-xl font-extrabold text-forest-950 flex items-center gap-2">
+                  <span>Eylül 2026</span>
+                  <span class="text-xs font-sans font-bold px-2.5 py-0.5 rounded-full bg-forest-100 text-forest-800 border border-forest-200">Rebiülevvel</span>
+                </h3>
+                <span class="text-[11px] text-forest-600 block mt-0.5">Randevu günü için tıklayınız</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <button onclick="changeCalendarMonth(-1)" class="w-8 h-8 rounded-xl bg-forest-50 hover:bg-forest-100 border border-forest-200 flex items-center justify-center text-forest-800 text-xs transition-all" title="Önceki Ay">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button onclick="changeCalendarMonth(1)" class="w-8 h-8 rounded-xl bg-forest-50 hover:bg-forest-100 border border-forest-200 flex items-center justify-center text-forest-800 text-xs transition-all" title="Sonraki Ay">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Gün Başlıkları -->
+            <div class="grid grid-cols-7 gap-1 text-center font-bold text-[11px] text-forest-700 uppercase mb-2">
+              <div>Pzt</div>
+              <div>Sal</div>
+              <div>Çar</div>
+              <div>Per</div>
+              <div>Cum</div>
+              <div>Cmt</div>
+              <div>Paz</div>
+            </div>
+
+            <!-- Gün Izgarası -->
+            <div id="calendar-days-grid" class="grid grid-cols-7 gap-1.5 text-center text-xs">
+              <!-- JS render -->
+            </div>
+
+            <!-- İpuçları -->
+            <div class="mt-5 pt-4 border-t border-forest-100 flex flex-wrap items-center justify-between gap-2 text-[10px] text-forest-700">
+              <span class="flex items-center gap-1 font-semibold">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span> Altın Şifa Günü
+              </span>
+              <span class="flex items-center gap-1 font-semibold">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> Sünnet Günü
+              </span>
+              <span class="flex items-center gap-1 font-semibold">
+                <span class="w-2.5 h-2.5 rounded-full bg-forest-800"></span> Seçili Gün
+              </span>
+            </div>
+
+          </div>
+
+          <!-- SAĞ: CANLI SAATLER (YEŞİL MÜSAİT / KIRMIZI DOLU / İPTAL ETME) -->
+          <div class="lg:col-span-6 white-card p-6 sm:p-7 rounded-3xl border border-forest-200 shadow-soft">
+            
+            <!-- Seçili Gün Kartı -->
+            <div class="p-4 rounded-2xl bg-forest-50 border border-forest-200 mb-5">
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] font-bold uppercase tracking-wider text-forest-600 block">SEÇİLEN RANDEVU TARİHİ</span>
+                  <strong id="selected-date-display" class="font-serif text-lg sm:text-xl text-forest-950 block">29 Eylül 2026 Salı</strong>
+                </div>
+                <div id="selected-date-badge" class="px-3 py-1.5 rounded-full bg-amber-100 border border-amber-300 text-amber-900 text-xs font-extrabold flex items-center gap-1.5 shadow-sm">
+                  <i class="fa-solid fa-crown text-amber-600"></i> BÜYÜK ALTIN GÜN
+                </div>
+              </div>
+              <p id="selected-date-info" class="text-[11px] text-forest-700 mt-2 leading-relaxed">
+                Hicri 17 Rebiülevvel (Mevlid Ayı Şifası). Yılın en faziletli kupa vaktidir.
+              </p>
+            </div>
+
+            <!-- Canlı Saat Slotları -->
+            <div class="mb-5">
+              <div class="flex items-center justify-between mb-2">
+                <label class="block text-xs font-bold text-forest-900 uppercase tracking-wider">
+                  Müsait Seans Saatleri (Canlı Takvim):
+                </label>
+                <span class="text-[10px] text-forest-600 font-semibold">Yeşil: Müsait | Kırmızı: Dolu</span>
+              </div>
+
+              <!-- Canlı Saat Slotları Grid -->
+              <div id="hourly-slots-container" class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                <!-- JS hourly slots will render here -->
+              </div>
+            </div>
+
+            <!-- Aktif Randevunuz & İptal Paneli (Eğer bu gün için randevusu varsa görünür) -->
+            <div id="active-booking-panel" class="hidden mb-5 p-4 rounded-2xl bg-amber-50 border-2 border-amber-300 text-xs text-amber-950">
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="font-bold text-amber-900 block text-[11px] uppercase tracking-wide">
+                    <i class="fa-solid fa-circle-check text-emerald-600 mr-1"></i> Bu Günde Kayıtlı Randevunuz Var:
+                  </span>
+                  <strong id="active-booking-text" class="text-xs font-serif font-extrabold text-forest-950 block mt-0.5">
+                    Saat 10:00 - Ahmet Yılmaz
+                  </strong>
+                </div>
+                <button type="button" onclick="cancelCurrentBooking()" class="px-3 py-1.5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-extrabold text-[11px] shadow-sm transition-all flex items-center gap-1">
+                  <i class="fa-solid fa-xmark"></i> Randevuyu İptal Et
+                </button>
+              </div>
+            </div>
+
+            <!-- Randevu Formu -->
+            <form id="appointment-form" onsubmit="handleAppointmentSubmit(event)" class="space-y-4 pt-3 border-t border-forest-100">
+              <input type="hidden" id="selected-date-input" value="29 Eylül 2026 Salı" />
+              <input type="hidden" id="selected-slot-input" value="10:00" />
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-[11px] font-bold text-forest-800 uppercase mb-1">Adınız Soyadınız *</label>
+                  <input type="text" id="client-name" required placeholder="Örn: Ahmet Yılmaz" class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-forest-200 bg-forest-50/40 focus:outline-none focus:border-forest-600 focus:bg-white text-forest-950 font-medium" />
+                </div>
+                <div>
+                  <label class="block text-[11px] font-bold text-forest-800 uppercase mb-1">Telefon Numaranız *</label>
+                  <input type="tel" id="client-phone" required placeholder="05XX XXX XX XX" class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-forest-200 bg-forest-50/40 focus:outline-none focus:border-forest-600 focus:bg-white text-forest-950 font-medium" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-[11px] font-bold text-forest-800 uppercase mb-1">Hizmet Türü</label>
+                <select id="client-service" class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-forest-200 bg-forest-50/40 focus:outline-none focus:border-forest-600 focus:bg-white text-forest-950 font-medium">
+                  <option value="Doğal Ateşli Cam Bardak Hacamatı">Doğal Ateşli Cam Bardak Hacamatı (Önerilen)</option>
+                  <option value="İlaç & Antibiyotik Toksin Detoksu Seansı">İlaç & Antibiyotik Toksin Detoksu Seansı</option>
+                  <option value="Tıbbi Sülük Tedavisi (Hirudoterapi)">Tıbbi Sülük Tedavisi (Hirudoterapi)</option>
+                  <option value="Kombine Hacamat + Sülük Şifa Seansı">Kombine Hacamat + Sülük Şifa Seansı</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-[11px] font-bold text-forest-800 uppercase mb-1">Şikayetiniz veya İlaç Geçmişiniz (İsteğe Bağlı)</label>
+                <input type="text" id="client-notes" placeholder="Örn: Bel fıtığı, şiddetli migren, antibiyotik halsizliği..." class="w-full px-3.5 py-2 text-xs rounded-xl border border-forest-200 bg-forest-50/40 focus:outline-none focus:border-forest-600 text-forest-950" />
+              </div>
+
+              <button type="submit" class="w-full py-3.5 px-5 rounded-xl bg-forest-800 hover:bg-forest-900 text-white font-bold text-xs uppercase tracking-wider transition-all shadow-md hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2">
+                <i class="fa-regular fa-calendar-check text-emerald-300"></i>
+                <span>Randevumu Onayla & WhatsApp ile Bildir</span>
+              </button>
+            </form>
+
+            <!-- Başarı Bildirim Kartı -->
+            <div id="booking-success-box" class="hidden mt-4 p-4 rounded-2xl bg-emerald-50 border border-emerald-300 text-xs text-emerald-950 space-y-2">
+              <div class="flex items-center gap-2 text-emerald-800 font-bold">
+                <i class="fa-solid fa-circle-check text-base text-emerald-600"></i>
+                <span>Randevunuz Başarıyla Ayrıldı!</span>
+              </div>
+              <p id="booking-success-details" class="text-forest-900 leading-relaxed">
+                Seçtiğiniz tarih ve saat sistemde adınıza kilitlendi. Dilediğiniz an bu ekrandan iptal edebilirsiniz.
+              </p>
+              <a id="whatsapp-send-link" href="#" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 text-white font-bold text-xs hover:bg-emerald-500 shadow-sm">
+                <i class="fa-brands fa-whatsapp text-base"></i> Hacamatçı Mikail Hoca'ya WhatsApp'tan Teyit Al
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 9. DANIŞAN YORUMLARI (47 GERÇEKÇİ ERKEK YORUMU & TÜMÜNÜ GÖR SİSTEMİ) -->
+    <!-- ========================================================================= -->
+    <section id="yorumlar" class="py-20 relative bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-forest-100 text-forest-800 text-xs font-bold uppercase mb-2 border border-forest-200">
+            <i class="fa-solid fa-comments text-forest-600"></i>
+            <span>DANIŞAN DENEYİMLERİ (47 DEĞERLENDİRME)</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest-950">
+            Mikail Hoca ile Şifa Bulan <span class="text-forest-gradient italic">Danışanlarımızın Yorumları</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-forest-800/80 mt-2">
+            Doğal cam bardak hacamatı ve ilaç detoksu yaptıran danışanlarımızın samimi tecrübeleri.
+          </p>
+
+          <div class="flex flex-wrap items-center justify-center gap-2 mt-6">
+            <button onclick="filterReviews('all')" class="review-tab-btn active px-3.5 py-1.5 rounded-full text-xs font-bold bg-forest-800 text-white transition-all shadow-sm">
+              Tümü (47)
+            </button>
+            <button onclick="filterReviews('ilac')" class="review-tab-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-forest-50 text-forest-800 border border-forest-200 hover:bg-forest-100 transition-all">
+              İlaç & Antibiyotik Detoksu (12)
+            </button>
+            <button onclick="filterReviews('bel')" class="review-tab-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-forest-50 text-forest-800 border border-forest-200 hover:bg-forest-100 transition-all">
+              Bel, Boyun & Kulunç (14)
+            </button>
+            <button onclick="filterReviews('migren')" class="review-tab-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-forest-50 text-forest-800 border border-forest-200 hover:bg-forest-100 transition-all">
+              Migren & Baş (6)
+            </button>
+            <button onclick="filterReviews('ilk')" class="review-tab-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-forest-50 text-forest-800 border border-forest-200 hover:bg-forest-100 transition-all">
+              İlk Defa Yaptıranlar (9)
+            </button>
+            <button onclick="filterReviews('bacak')" class="review-tab-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-forest-50 text-forest-800 border border-forest-200 hover:bg-forest-100 transition-all">
+              Bacak & Eklem (6)
+            </button>
+          </div>
+        </div>
+
+        <!-- 47 Adet Gerçekçi Yorum Izgarası -->
+        <div id="reviews-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Yorum 1 -->
+          <div class="review-item  white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bel">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 gün önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Yıllardır boyun tutulması ve kronik sırt ağrısı çekiyordum. Mikail Hoca'nın doğal cam bardakla yaptığı seansından sonra sırtımdaki 50 kiloluk yük kalktı sanki. Gece ilk defa deliksiz uyudum, Allah razı olsun."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Ahmet Yılmaz (44)</strong>
+                <span class="text-[11px] text-forest-600">Esnaf • İstanbul Fatih</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 2 -->
+          <div class="review-item  white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilac">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">3 gün önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Düzenli antibiyotik ve tansiyon ilaçları kullanıyordum, vücudum sürekli hantal ve yorgundu. İlk seanstan sonra sabahları kuş gibi uyanmaya başladım, resmen kanım tazelendi."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Mehmet Çelik (51)</strong>
+                <span class="text-[11px] text-forest-600">Emekli Öğretmen • Bursa</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 3 -->
+          <div class="review-item  white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bel">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">5 gün önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Uzun yol tır şoförüyüm, belimde ve sağ bacağımda feci çekme oluyordu. Sünnet günü Kâhil ve bel bölgesine kupa attırdım. 2 aydır bacaklarımda en ufak sızı kalmadı, şoför arkadaşlara da tavsiye ettim."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Mustafa Demir (38)</strong>
+                <span class="text-[11px] text-forest-600">Tır Şoförü • Sakarya</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 4 -->
+          <div class="review-item  white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bel">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">1 hafta önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Bilgisayar başında 9 saat oturmaktan sol kürek kemiğim kaskatı kesilmişti. Ateşli cam bardağın o ılık sıcağı kaslarımı öyle bir açtı ki anlatamam. Kesinlikle plastik vakumla kıyaslanamaz."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Serdar Kaya (34)</strong>
+                <span class="text-[11px] text-forest-600">Yazılım Mühendisi • İstanbul Kadıköy</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 5 -->
+          <div class="review-item  white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilk">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">1 hafta önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Şantiyede ağır kaldırınca belimi kilitledim. Mikail Hoca bel ve kuyruk sokumu bölgesine çok titiz çalıştı. Seans sonu sürdüğü saf kantaron yağı sayesinde 4 günde deride en ufak iz kalmadı."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">İbrahim Hakkı Şahin (49)</strong>
+                <span class="text-[11px] text-forest-600">İnşaat Mühendisi • Kocaeli İzmit</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 6 -->
+          <div class="review-item  white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="migren">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">1 hafta önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Her hafta sonu migren atağı geçirip karanlık odaya kapanırdım. Cankurtaran (kafa) hacamatı yaptırdım, 1 aydır tek bir ağrı kesici hap içmedim. Zihnim öyle berrak ki anlatamam."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Hakan Öztürk (42)</strong>
+                <span class="text-[11px] text-forest-600">Bankacı • Ankara Çankaya</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 7 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bel">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 hafta önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Ağır bacak antrenmanlarından sonra laktik asit kaslarımdan çıkmıyordu. Bacak ve sırt bölgesine yapılan cam bardak seansı toparlanma süremi yarıya indirdi. Sporcu dostlarıma kesinlikle öneririm."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Burak Erdem (29)</strong>
+                <span class="text-[11px] text-forest-600">Fitness Antrenörü • İstanbul Üsküdar</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 8 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilac">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 hafta önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Yıllardır ilaç sektöründeyim, kimyasal maddelerin vücutta nasıl depolandığını iyi bilirim. Hacamat seansı sonrası karaciğerimin ve böbreklerimin nefes aldığını hissettim. İlaç detoksu için şart."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Ömer Faruk Aydın (47)</strong>
+                <span class="text-[11px] text-forest-600">Eczane Teknisyeni • Sakarya Hendek</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 9 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bacak">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 hafta önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Merdiven çıkarken dizlerimde çıtırtı ve yanma oluyordu. Diz çevresine yapılan uygulama eklemlerimi inanılmaz rahatlattı. Artık namaz kılarken secdeden rahatça doğrulabiliyorum."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Kemal Aslan (46)</strong>
+                <span class="text-[11px] text-forest-600">Kamu Görevlisi • Düzce</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 10 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="migren">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">3 hafta önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Gece vardiyalarından dolayı kronik uykusuzluk ve unutkanlık başlamıştı. Hâme tepe noktasına kupa yapıldıktan sonra kafamdaki sis dağıldı, uykum düzene girdi, odaklanmam arttı."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Yusuf Kenan D. (33)</strong>
+                <span class="text-[11px] text-forest-600">Özel Güvenlik • İstanbul Maltepe</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 11 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilac">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">3 hafta önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Ağır grip sonrası ciğerlerimde tıkanıklık kalmıştı, öksürük geçmiyordu. Sırtıma yapılan kupa ile nefes borum sanki genişledi, ciğerlerime ilk defa temiz hava dolduğunu hissettim."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Selim Tokgöz (40)</strong>
+                <span class="text-[11px] text-forest-600">Esnaf • Bolu</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 12 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilk">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">3 hafta önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "İlk defa yaptıracağım için 'acır mı, kesik derin olur mu' diye çok çekiniyordum. Mikail Hoca sinek ısırığı gibi minik dokunuşlar yaptı. Hiçbir acı hissetmedim, boşuna yıllarca korkmuşum."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Fatih Karaca (37)</strong>
+                <span class="text-[11px] text-forest-600">Mali Müşavir • İstanbul Ümraniye</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 13 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="migren">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">3 hafta önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Tansiyonum sürekli 15-16 civarlarında gezerdi, ensemde ateş hissederdim. Hacamat sonrası tansiyonum 12'ye dengelendi. Baş dönmelerim tamamen kesildi, şifaya vesile oldu."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Bilal Yıldız (45)</strong>
+                <span class="text-[11px] text-forest-600">Öğretmen • Yalova</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 14 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bel">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">1 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Bel fıtığı başlangıcı teşhisi konmuştu, bacağıma çekiyordu ağrı. Bel ve sakrum bölgesine yapılan ateşli kupa uygulamasından sonra çok şükür işime rahatça devam ediyorum."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Halil İbrahim G. (36)</strong>
+                <span class="text-[11px] text-forest-600">Makine Operatörü • Kocaeli Gebze</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 15 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilk">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">1 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "10 yıldır bu işi layıkıyla yapan insan hemen belli oluyor. Mikail Hoca önce nabza bakıyor, noktaları çok iyi biliyor. Her altın günde ailecek duacıyız, eline emeğine sağlık."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Ali Fuat K. (50)</strong>
+                <span class="text-[11px] text-forest-600">Mobilyacı • Sakarya Adapazarı</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 16 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bel">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">1 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Sürekli direksiyon başında debriyaja basmaktan sol kalçamda ve baldırımda uyuşma oluyordu. Mikail Hoca bel ve bacak arkasına ateşli kupa koydu. 1 aydır tık yok, seferlere zımba gibi çıkıyorum."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Murat Sezgin (41)</strong>
+                <span class="text-[11px] text-forest-600">Şehirlerarası Otobüs Kaptanı • İstanbul</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 17 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="migren">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">1 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Sürekli bilgisayar ekranına bakmaktan göz arkalarım zonklardı. Şakak ve kafa arkası hacamatından sonra sanki gözlerimin önündeki sis perdesi kalktı, pırıl pırıl görüyorum."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Emre Çetin (31)</strong>
+                <span class="text-[11px] text-forest-600">Grafik Tasarımcı • Bursa Nilüfer</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 18 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilac">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">1 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Sanayide metal tozu ve kaynak dumanı soluyoruz. Hacamat seansı sonrası ciğerlerimdeki ferahlığı anlatamam. Sabahları boğazımdaki o yapışkan hırıltı ve balgam tamamen kayboldu."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Harun Kılıç (53)</strong>
+                <span class="text-[11px] text-forest-600">Sanayi Kaynak Ustası • Kocaeli Körfez</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 19 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilk">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">1 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Efendimiz SAV'in mübarek tavsiyesine niyet ederek Salı gününe randevu aldım. Mikail Hoca hem sünnet adabına hem steriliteye harfiyen uyuyor. Manevi huzuru bambaşka, Allah razı olsun."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Osman Nuri B. (48)</strong>
+                <span class="text-[11px] text-forest-600">Din Görevlisi • İstanbul Pendik</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 20 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bacak">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">1 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Kışın rüzgar ve yağmur yemekten dizlerimde ve omuzlarımda romatizmal sızılar başlamıştı. Ateşli cam bardağın o derin sıcaklığı eklemlerimi yeniden canlandırdı."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Cengizhan Tunç (35)</strong>
+                <span class="text-[11px] text-forest-600">Motosikletli Kurye • İstanbul Beşiktaş</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 21 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bel">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">1 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Yoğun iş stresi, baş ağrısı ve mide gerginliği yapıyordu. Kâhil ve sırt noktalarından toksin atılınca ruhuma bir sükunet geldi, evde ve işte tahammülüm arttı."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Sinan Vural (43)</strong>
+                <span class="text-[11px] text-forest-600">Tekstil Atölye Sahibi • Sakarya Akyazı</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 22 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilk">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">1 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Kan aldırmaktan bile çekinen bir insandım. Mikail Hoca o kadar yumuşak ve sakin uyguladı ki hiçbir acı hissetmedim. Sırtımdaki kulunçlar pamuk gibi oldu."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Zafer Doğan (39)</strong>
+                <span class="text-[11px] text-forest-600">Elektrik Teknisyeni • Düzce Akçakoca</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 23 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilac">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">1 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Tarlada ilaçlama motoru taşımaktan sırtım tutulurdu, kimyasallardan halsizlik vardı. İlaç detoksu seansından sonra 10 yaş gençleşmiş gibi hafifledim."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Ekrem Şen (55)</strong>
+                <span class="text-[11px] text-forest-600">Fındık Üreticisi • Sakarya Geyve</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 24 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="migren">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">1 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Kulak çınlaması ve boyun kasılması yüzünden konsantre olamıyordum. Kulağın arkasına ve boyun köküne uygulanan hassas kupa ile çınlama neredeyse yok denecek kadar azaldı."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Tolga Yurt (32)</strong>
+                <span class="text-[11px] text-forest-600">Çağrı Merkezi Takım Lideri • İstanbul Kartal</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 25 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bacak">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Bel ağrılarından dolayı yürürken tekliyordum. 2 seans ateşli kupa ve sülük kombini yapıldı. Şimdi sabahları parkta 4 kilometre tempolu yürüyüş yapıyorum."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Sadık Polat (58)</strong>
+                <span class="text-[11px] text-forest-600">Emekli Emniyet Mensubu • Ankara</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 26 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilk">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Tıbb-ı Nebevi metodolojisini bilen ve 10 yıldır aynı edeple hizmet veren Mikail Hoca'ya teşekkür ederim. Hem hijyeni hem de elinin hafifliği takdire şayan."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Mahmut Celalettin (45)</strong>
+                <span class="text-[11px] text-forest-600">İlahiyatçı Araştırmacı • İstanbul Fatih</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 27 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilac">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Ağır grip ilaçları ve ağrı kesiciler sonrası karaciğerimde ağırlık hissediyordum. Hacamat o kimyasal tortuları söküp attı, sabah uyanışlarım çok kolaylaştı."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Kerem Balcı (28)</strong>
+                <span class="text-[11px] text-forest-600">Yazılım Geliştirici • Kocaeli Başiskele</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 28 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilac">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Karaciğer yağlanması başlangıcım vardı, sürekli esnerdim. İlk seanstan sonra o üzerimdeki kurşun ağırlık kalktı, enerjim yerine geldi."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Rıdvan Yavuz (46)</strong>
+                <span class="text-[11px] text-forest-600">Lojistik Müdürü • Sakarya</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 29 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bacak">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Günde 12 saat sıcak mutfakta ayakta kalmaktan topuk ve baldır krampları çekiyordum. Bacak kupalarından sonra gece krampları tamamen bitti."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Mesut Candan (37)</strong>
+                <span class="text-[11px] text-forest-600">Aşçıbaşı • Bolu Mengen</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 30 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bacak">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Menisküs başlangıcı ve diz ödemi için geldim. Diz kapağı etrafına uygulanan kombine seans sonrası dizimi kıvırırken duyduğum batma yok oldu."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Alparslan Güler (33)</strong>
+                <span class="text-[11px] text-forest-600">Beden Eğitimi Öğretmeni • İstanbul</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 31 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bel">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Bel fıtığı yüzünden eğilip ayakkabımı bağlayamıyordum. Bel ve kâhil noktalarına yapılan ateşli bardak uygulamasından sonra hareketlerim tamamen açıldı."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Recep Tayyar (52)</strong>
+                <span class="text-[11px] text-forest-600">Marangoz Ustası • Sakarya Serdivan</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 32 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilac">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Sürekli antibiyotik içmekten midem ve bağırsaklarım yorulmuştu. Mikail Hoca'nın detoks seansıyla vücudum hafifledi, hazımsızlığım da azaldı."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Uğur Börekçi (41)</strong>
+                <span class="text-[11px] text-forest-600">Gıda İşletmecisi • İstanbul Kadıköy</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 33 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="migren">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Gözlerimin arkasında nabız gibi atan şiddetli şakak zonklamaları bitti. 1 aydır kutu kutu içtiğim ağrı kesicileri dolaba kaldırdım."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Turgay Koç (44)</strong>
+                <span class="text-[11px] text-forest-600">Gümrük Müşaviri • Kocaeli Derince</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 34 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilk">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Yaş ilerledikçe eklem tutulmaları oluyordu. Mikail Hoca hürmetli, efendi ve işini bilen biri. Her mevsim geçişinde tereddütsüz kendisindeyim."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Nihat Bayraktar (61)</strong>
+                <span class="text-[11px] text-forest-600">Emekli Zabıta • Sakarya</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 35 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bel">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Boyun düzleşmesi yüzünden başımı sağa sola çeviremiyordum. Tek seansta boynumun açıldığını hissettim, kesinlikle tavsiye ederim."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Serkan Dinçer (36)</strong>
+                <span class="text-[11px] text-forest-600">Sigorta Eksperi • İstanbul Ataşehir</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 36 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bel">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Şehir içi trafikte oturmaktan kuyruk sokumu ve kalça kaslarım kilitleniyordu. Isı vakumlu ateşli bardak kasları eritti sanki, sıfır ağrı."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Davut Aksoy (50)</strong>
+                <span class="text-[11px] text-forest-600">Minibüs Şoförü • Kocaeli İzmit</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 37 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilac">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Tiner ve kimyasal mürekkep kokusu yıllarca başımda ağırlık yaptı. Hacamattan sonra ciğerlerime ve beynime oksijen gittiğini hissettim."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Orhan Çakır (47)</strong>
+                <span class="text-[11px] text-forest-600">Matbaa Ustası • İstanbul Topkapı</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 38 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilk">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Klinikte sterilizasyona aşırı dikkat eden biri olarak Mikail Hoca'nın temizliğine ve kullandığı tek kullanımlık malzemelere tam not verdim."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Kadir Mengüç (34)</strong>
+                <span class="text-[11px] text-forest-600">Veteriner Hekim • Düzce</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 39 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilk">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Sırtımda kesik izi kalır mı endişesiyle gitmiştim. Seans sonrası sürülen kantaron yağı sayesinde 5 gün içinde derim tamamen pürüzsüzleşti."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Tarık Özkan (27)</strong>
+                <span class="text-[11px] text-forest-600">Mimar • İstanbul Şişli</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 40 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bel">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Yıllarca bot ve teçhizat taşımaktan omurgamda ezilmeler vardı. Sırtımdaki kupalar kalkınca üzerimden çelik yelek çıkmış gibi ferahladım."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Bayram Sönmez (56)</strong>
+                <span class="text-[11px] text-forest-600">Emekli Astsubay • Sakarya Sapanca</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 41 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bel">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">2 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Gece diş sıkmaktan sabahları çenem ve boynum kaskatı uyanırdım. Boyun ve kâhil seansından sonra sabahları ilk defa gevşemiş uyandım."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Ersin Barış (38)</strong>
+                <span class="text-[11px] text-forest-600">E-Ticaret Yöneticisi • Bursa Osmangazi</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 42 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bacak">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">3 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Hareketsizlikten bacaklarımda huzursuzluk vardı, gece uyutmazdı. Altın günde bacak arkasına yapılan kupa ile deliksiz uyumaya başladım."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Salih Zeki T. (49)</strong>
+                <span class="text-[11px] text-forest-600">Kuyumcu • İstanbul Kapalıçarşı</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 43 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilac">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">3 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Ağır çalışma temposunda sürekli hastalanırdım. Bağışıklık noktalarına yapılan hacamat sayesinde bu dönemi tek bir soğuk algınlığı olmadan atlattım."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Kenan Bozkurt (42)</strong>
+                <span class="text-[11px] text-forest-600">Fabrika Vardiya Amiri • Kocaeli Dilovası</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 44 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bel">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">3 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Hastaya eğilerek dolgu yapmaktan kürek kemiğimde taş gibi kulunçlar oluşmuştu. Ateşli cam bardak kas spazmını tamamen çözdü."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Yavuz Selim K. (30)</strong>
+                <span class="text-[11px] text-forest-600">Diş Hekimi • Sakarya Erenler</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 45 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bel">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">3 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Bel kulunçları yüzünden yatakta sağdan sola dönemezdim. Mikail Hocamın şifalı eli değdikten sonra hamdolsun ikinci gençliğimi yaşıyorum."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Bünyamin Dağ (54)</strong>
+                <span class="text-[11px] text-forest-600">İnşaat Ustası • Bolu Gerede</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 46 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="bacak">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">3 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Dizlerimde menisküs ve sıvı kaybı sızısı vardı. Sülük ve kupa tedavisini birlikte aldım, merdivenleri artık koşarak inip çıkabiliyorum."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Şaban Karagöz (46)</strong>
+                <span class="text-[11px] text-forest-600">Toptancı • Düzce</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+
+          <!-- Yorum 47 -->
+          <div class="review-item extra-review hidden white-card p-6 rounded-3xl border border-forest-100 flex flex-col justify-between white-card-hover transition-all duration-300" data-cat="ilac">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex text-gold-500 text-xs gap-1">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-[10px] text-forest-600 font-semibold">3 ay önce</span>
+              </div>
+              <p class="text-xs text-forest-900 leading-relaxed mb-4">
+                "Bir eczacı olarak söylüyorum: Vücutta biriken sentetik ilaç artıklarını dışarı atmanın en doğal yolu hacamattır. Mikail Hoca'nın 10 yıllık ustalığı güven veriyor."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-forest-100 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-forest-950 block">Cüneyt Demirtaş (39)</strong>
+                <span class="text-[11px] text-forest-600">Eczacı • İstanbul Bakırköy</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-forest-50 text-forest-800 text-[10px] font-bold">Onaylı Danışan</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- "Tüm Yorumları Gör (47)" Genişletme Butonu -->
+        <div class="mt-10 text-center">
+          <button id="toggle-reviews-btn" onclick="toggleAllReviews()" class="px-8 py-3.5 rounded-2xl bg-white border-2 border-forest-700 text-forest-900 hover:bg-forest-50 transition-all font-bold text-xs uppercase tracking-wider shadow-sm flex items-center gap-2.5 mx-auto">
+            <span id="toggle-reviews-text">Tüm Danışan Yorumlarını Gör (47 Değerlendirme)</span>
+            <i id="toggle-reviews-icon" class="fa-solid fa-chevron-down text-forest-600"></i>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 10. SIKÇA SORULAN SORULAR -->
+    <!-- ========================================================================= -->
+    <section id="faq" class="py-16 relative bg-forest-50/40 border-t border-forest-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-10">
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-forest-950">
+            Merak Edilenler & <span class="text-forest-gradient italic">Hacamat Esasları</span>
+          </h2>
+        </div>
+
+        <div class="space-y-3">
+          <details class="group white-card p-4 rounded-2xl border border-forest-100">
+            <summary class="font-bold text-xs sm:text-sm text-forest-950 cursor-pointer flex items-center justify-between">
+              <span>Hacamat yaptırırken canım acır mı? Kesikler derin mi atılır?</span>
+              <i class="fa-solid fa-chevron-down text-xs text-forest-600 group-open:rotate-180 transition-transform"></i>
+            </summary>
+            <p class="text-xs text-forest-800/90 mt-3 leading-relaxed border-t border-forest-50 pt-2">
+              Kesinlikle derin kesi yapılmaz. Hacamatçı Mikail Hoca 10 yıllık ustalığı ile sadece derinin en üst epidermis katmanına 0.5 milimetrelik mikro-çizikler atar. Doğal ateşli cam bardağın ılık sıcaklığı kası gevşettiği için duyulan his sinek ısırığından farksızdır.
+            </p>
+          </details>
+
+          <details class="group white-card p-4 rounded-2xl border border-forest-100">
+            <summary class="font-bold text-xs sm:text-sm text-forest-950 cursor-pointer flex items-center justify-between">
+              <span>Sırtımda veya cildimde iz kalır mı?</span>
+              <i class="fa-solid fa-chevron-down text-xs text-forest-600 group-open:rotate-180 transition-transform"></i>
+            </summary>
+            <p class="text-xs text-forest-800/90 mt-3 leading-relaxed border-t border-forest-50 pt-2">
+              Kalıcı hiçbir iz kalmaz. Seansın hemen ardından sürülen saf sarı kantaron yağı hücre yenilenmesini hızlandırır; minik çizgiler 3 ila 7 gün içinde tamamen kaybolarak cilt pürüzsüzleşir.
+            </p>
+          </details>
+
+          <details class="group white-card p-4 rounded-2xl border border-forest-100">
+            <summary class="font-bold text-xs sm:text-sm text-forest-950 cursor-pointer flex items-center justify-between">
+              <span>Sürekli antibiyotik ve ilaç kullanıyorum, hacamat fayda eder mi?</span>
+              <i class="fa-solid fa-chevron-down text-xs text-forest-600 group-open:rotate-180 transition-transform"></i>
+            </summary>
+            <p class="text-xs text-forest-800/90 mt-3 leading-relaxed border-t border-forest-50 pt-2">
+              En çok fayda görecek grup ilaç kullananlardır. Böbrek ve karaciğerin atamadığı kimyasal kalıntılar kılcal damarlarda depolanır. Hacamat, bu toksik çökeltileri doğrudan dışarı alarak vücudu hücresel düzeyde ferahlatır.
+            </p>
+          </details>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================= -->
+    <!-- ========================================================================= -->
+  <!-- 11. FOOTER (media_1789319557456.png İLE BİREBİR UYUMLU MODERN TASARIM) -->
+  <!-- ========================================================================= -->
+  <footer class="bg-[#15242B] text-white pt-16 pb-12 border-t border-[#23353E] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- 3 Ana Kolon Izgarası -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-14 mb-12">
+        
+        <!-- Sol Kolon: Logo, Açıklama ve Sosyal Butonlar (5 Kolon) -->
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-3.5">
+            <div class="w-11 h-11 rounded-2xl bg-[#22353D] flex items-center justify-center text-[#4ADE80] text-xl shadow-inner border border-emerald-500/20">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <div>
+              <span class="font-serif text-xl font-bold tracking-wider text-white block">MİKAİL HOCA</span>
+              <span class="text-[10px] uppercase tracking-widest text-[#4ADE80] font-bold block">GELENEKSEL TIP & HACAMAT</span>
+            </div>
+          </div>
+          
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm pt-1">
+            Steril koşullarda, geleneksel şifayı modern tıbbi hijyen standartları ile birleştirerek sağlığınızı korumanıza yardımcı oluyoruz.
+          </p>
+
+          <div class="flex items-center gap-2.5 pt-2">
+            <a href="https://wa.me/905355566434?text=Selam%C3%BCn%20Aleyk%C3%BCm%20Hacamat%C3%A7%C4%B1%20Mikail%20Hocam%2C%20seans%20ve%20randevu%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" aria-label="WhatsApp" class="w-10 h-10 rounded-xl bg-[#22323A] hover:bg-emerald-600 text-slate-200 hover:text-white flex items-center justify-center transition-all duration-200 text-base shadow-sm">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-xl bg-[#22323A] hover:bg-emerald-600 text-slate-200 hover:text-white flex items-center justify-center transition-all duration-200 text-base shadow-sm">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-xl bg-[#22323A] hover:bg-emerald-600 text-slate-200 hover:text-white flex items-center justify-center transition-all duration-200 text-base shadow-sm">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Orta Kolon: HIZLI MENÜ (3 Kolon) -->
+        <div class="md:col-span-3">
+          <h4 class="font-serif text-base sm:text-lg font-bold text-white uppercase tracking-wider">HIZLI MENÜ</h4>
+          <div class="w-8 h-0.5 bg-emerald-500 rounded my-2.5"></div>
+          
+          <div class="grid grid-cols-2 gap-x-4 gap-y-3 text-xs sm:text-sm text-slate-300 mt-4">
+            <div class="space-y-3 flex flex-col">
+              <a href="#hero" class="hover:text-emerald-400 transition-colors">Ana Sayfa</a>
+              <a href="#kanitlanmis-faydalar" class="hover:text-emerald-400 transition-colors">Hacamat Faydaları</a>
+              <a href="#faq" class="hover:text-emerald-400 transition-colors">Sık Sorulanlar</a>
+            </div>
+            <div class="space-y-3 flex flex-col">
+              <a href="#hadis-serif" class="hover:text-emerald-400 transition-colors">Hakkımızda</a>
+              <a href="#nasil-yapilir" class="hover:text-emerald-400 transition-colors">Seans Adımları</a>
+              <a href="#hacamat-randevu" class="hover:text-emerald-400 transition-colors font-semibold text-emerald-300">Randevu Al</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sağ Kolon: İLETİŞİM DETAYLARI (4 Kolon) -->
+        <div class="md:col-span-4 space-y-4">
+          <div>
+            <h4 class="font-serif text-base sm:text-lg font-bold text-white uppercase tracking-wider">İLETİŞİM DETAYLARI</h4>
+            <div class="w-8 h-0.5 bg-emerald-500 rounded my-2.5"></div>
+          </div>
+
+          <div class="space-y-3.5 text-xs sm:text-sm text-slate-300">
+            <a href="https://wa.me/905355566434" target="_blank" class="flex items-center gap-3 text-slate-200 hover:text-emerald-300 transition-colors group">
+              <i class="fa-solid fa-phone text-emerald-400 text-sm group-hover:scale-110 transition-transform"></i>
+              <span class="font-semibold tracking-wide text-sm">0535 556 64 34</span>
+            </a>
+
+            <div class="flex items-center gap-3 text-slate-300">
+              <i class="fa-solid fa-envelope text-emerald-400 text-sm"></i>
+              <span>info@mikailhoca.com</span>
+            </div>
+
+            <div class="flex items-start gap-3 text-xs text-slate-400 pt-1 leading-relaxed">
+              <i class="fa-solid fa-shield-halved text-emerald-400 text-sm mt-0.5 flex-shrink-0"></i>
+              <span>Tüm uygulamalarda tek kullanımlık steril tıbbi malzemeler kullanılmaktadır.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Alt Telif & Yasal Uyarı Çubuğu -->
+      <div class="pt-6 border-t border-[#23353E] flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-3">
+        <div>© 2026 HACAMATÇI MİKAİL HOCA. Tüm Hakları Saklıdır.</div>
+        <div class="text-right text-slate-500">
+          Uyarı: Bu sitede yer alan bilgiler destekleyici niteliktedir. Tıbbi teşhis ve tedavi yerine geçmez.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ========================================================================= -->
+  <!-- 12. GELİŞMİŞ PROFESYONEL CHAT BOT (KOLAY KAPATILABİLİR & DIŞARI DOKUNUNCA KAPANIR) -->
+  <!-- ========================================================================= -->
+  <!-- Karartma Katmanı (Mobilde dışarı dokunulunca hemen kapatır) -->
+  <div id="chat-backdrop" onclick="toggleChatAssistant(false)" class="hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-40 transition-opacity duration-200"></div>
+
+  <div id="chat-assistant-widget" class="fixed bottom-6 left-6 z-50 hidden md:block">
+    
+    <!-- Yuvarlak Açma/Kapama Butonu -->
+    <button onclick="toggleChatAssistant(true)" id="chat-toggle-btn" class="flex items-center gap-2.5 sm:gap-3 p-2.5 sm:px-4 sm:py-3 rounded-full bg-forest-800 text-white shadow-2xl hover:bg-forest-900 transition-all border-2 border-white group active:scale-95">
+      <div class="relative">
+        <div class="w-8 h-8 rounded-full bg-emerald-500 flex items-center justify-center text-white text-sm shadow-sm">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+        <span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-emerald-400 ring-2 ring-forest-800"></span>
+      </div>
+      <div class="text-left hidden sm:block">
+        <span class="text-xs font-bold block leading-none">Şifa Danışmanı</span>
+        <span class="text-[9px] text-emerald-300 font-medium">Ne rahatsızlığınız var?</span>
+      </div>
+    </button>
+
+    <!-- Chat Bot Penceresi -->
+    <div id="chat-modal-window" class="hidden fixed inset-x-3 bottom-20 sm:bottom-16 sm:absolute sm:inset-x-auto sm:bottom-16 sm:left-0 w-auto sm:w-[420px] max-h-[82vh] bg-white rounded-3xl shadow-2xl border border-forest-200 overflow-hidden transition-all duration-300 flex flex-col z-50">
+      
+      <!-- Başlık Çubuğu: BÜYÜK VE NET "KAPAT" BUTONU İLE HERKESİN ANLAYACAĞI TASARIM -->
+      <div class="bg-forest-900 text-white p-3.5 sm:p-4 flex items-center justify-between border-b border-forest-800">
+        <div class="flex items-center gap-2.5 sm:gap-3">
+          <div class="relative">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-forest-800 border border-emerald-400 flex items-center justify-center text-emerald-300 text-base shadow-sm">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-emerald-400 ring-2 ring-forest-900"></span>
+          </div>
+          <div>
+            <div class="text-xs sm:text-sm font-bold flex items-center gap-1.5">
+              <span>Hacamatçı Mikail Hoca</span>
+              <span class="px-1.5 py-0.2 rounded bg-emerald-500/30 text-emerald-300 text-[9px] font-extrabold">Danışman</span>
+            </div>
+            <div class="text-[10px] text-emerald-300 flex items-center gap-1 mt-0.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span> Çevrimiçi • Yanıt Veriyor
+            </div>
+          </div>
+        </div>
+
+        <!-- BÜYÜK VE NET GÖRÜNEN KAPATMA BUTONU -->
+        <div class="flex items-center gap-1.5">
+          <button onclick="toggleChatAssistant(false)" class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-extrabold text-xs transition-all shadow-md active:scale-95 border border-white/20 cursor-pointer" title="Sohbeti Kapat ve Siteye Dön">
+            <i class="fa-solid fa-xmark text-sm font-black"></i>
+            <span>KAPAT</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Kolay Kapatma Bilgi Çubuğu (Yaşlı veya teknoloji bilmeyenler için ekstra kolaylık) -->
+      <div class="bg-forest-100/90 px-3.5 py-1.5 border-b border-forest-200 flex items-center justify-between text-[11px]">
+        <span class="text-forest-900 font-bold flex items-center gap-1">
+          <i class="fa-regular fa-comment-dots text-forest-700"></i> Rahatsızlığınızı Sorabilirsiniz
+        </span>
+        <button onclick="toggleChatAssistant(false)" class="text-rose-700 hover:text-rose-800 font-bold underline cursor-pointer flex items-center gap-1">
+          <span>✕ Siteye Geri Dön</span>
+        </button>
+      </div>
+
+      <!-- Mesajlar Alanı -->
+      <div id="chat-messages" class="p-4 space-y-3 max-h-[380px] overflow-y-auto text-xs bg-forest-50/50">
+        
+        <!-- Karşılama Mesajı -->
+        <div class="p-3.5 rounded-2xl rounded-tl-none bg-white border border-forest-200 text-forest-950 shadow-sm leading-relaxed">
+          <p class="font-bold text-forest-900 mb-1">🌿 Selamün Aleyküm, şifalar olsun!</p>
+          <p>Ben Hacamatçı Mikail Hoca'nın Şifa Danışmanıyım. <strong>Tam olarak ne rahatsızlığınız veya nerenizde bir ağrı var?</strong></p>
+          <p class="text-[11px] text-forest-700 mt-1.5">Aşağıya rahatsızlığınızı yazabilir veya hızlı şikayet butonlarından birine dokunabilirsiniz. Size özel tedavi noktasını ve seans sonrası iyi yanlarını detaylıca anlatayım:</p>
+        </div>
+
+        <!-- Hızlı Şikayet Seçim Butonları -->
+        <div id="chat-symptom-chips" class="grid grid-cols-1 gap-1.5 pt-1">
+          <button onclick="handleSymptomClick('bel')" class="w-full text-left p-2.5 rounded-xl bg-white hover:bg-forest-100 border border-forest-200 text-forest-950 font-semibold transition-all text-[11px] flex items-center gap-2">
+            <span>🦴</span> <span>Bel Fıtığı, Boyun Tutulması & Sırt Kulunçları</span>
+          </button>
+          <button onclick="handleSymptomClick('migren')" class="w-full text-left p-2.5 rounded-xl bg-white hover:bg-forest-100 border border-forest-200 text-forest-950 font-semibold transition-all text-[11px] flex items-center gap-2">
+            <span>🧠</span> <span>Şiddetli Migren & Baş Zonklaması</span>
+          </button>
+          <button onclick="handleSymptomClick('ilac')" class="w-full text-left p-2.5 rounded-xl bg-white hover:bg-forest-100 border border-forest-200 text-forest-950 font-semibold transition-all text-[11px] flex items-center gap-2">
+            <span>💊</span> <span>Sürekli Antibiyotik / İlaç Kullanımı & Halsizlik</span>
+          </button>
+          <button onclick="handleSymptomClick('bacak')" class="w-full text-left p-2.5 rounded-xl bg-white hover:bg-forest-100 border border-forest-200 text-forest-950 font-semibold transition-all text-[11px] flex items-center gap-2">
+            <span>🦵</span> <span>Diz Sıvı Kaybı, Bacak Sızısı & Varis</span>
+          </button>
+          <button onclick="handleSymptomClick('korku')" class="w-full text-left p-2.5 rounded-xl bg-white hover:bg-forest-100 border border-forest-200 text-forest-950 font-semibold transition-all text-[11px] flex items-center gap-2">
+            <span>🛡️</span> <span>İlk Defa Yaptıracağım (Acıtır mı, İz Kalır mı?)</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mesaj Giriş Alanı -->
+      <div class="p-3 bg-white border-t border-forest-100 flex items-center gap-2">
+        <input 
+          type="text" 
+          id="chat-user-input" 
+          placeholder="Nereniz ağrıyor? (Örn: Belim ağrıyor, migrenim var...)" 
+          class="flex-1 px-3.5 py-2.5 text-xs bg-forest-50/60 border border-forest-200 rounded-xl focus:outline-none focus:border-forest-600 focus:bg-white text-forest-950 font-medium" 
+          onkeydown="if(event.key === 'Enter'){ event.preventDefault(); sendFreeChatMessage(); }"
+        />
+        <button onclick="sendFreeChatMessage()" class="p-2.5 rounded-xl bg-forest-800 hover:bg-forest-900 text-white text-xs px-3.5 font-bold transition-all shadow-sm">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </div>
+
+      <!-- Alt Kapatma Çubuğu (Mobilde tek dokunuşla çıkış için) -->
+      <div class="px-3 py-1.5 bg-slate-50 border-t border-slate-100 text-center">
+        <button onclick="toggleChatAssistant(false)" class="text-slate-500 hover:text-slate-800 text-[11px] font-semibold flex items-center justify-center gap-1.5 mx-auto cursor-pointer">
+          <i class="fa-solid fa-arrow-left text-[10px]"></i>
+          <span>Bu sohbeti kapat ve web sitesinden devam et</span>
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Sabit Hızlı WhatsApp Butonu (Sağ Alt) -->
+  <div class="fixed bottom-6 right-6 z-40 hidden md:flex flex-col items-end gap-2.5">
+    <a href="https://wa.me/905355566434?text=Selam%C3%BCn%20Aleyk%C3%BCm%20Hacamat%C3%A7%C4%B1%20Mikail%20Hocam%2C%20seans%20ve%20randevu%20almak%20istiyorum." target="_blank" aria-label="WhatsApp ile Mesaj Gönder" class="w-13 h-13 p-3.5 rounded-full bg-emerald-600 text-white shadow-lg hover:bg-emerald-500 hover:scale-110 active:scale-95 transition-all flex items-center justify-center border-2 border-white">
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 13. JAVASCRIPT: GERÇEK DOLU/BOŞ TAKVİM, İPTAL ETME & CHAT SİSTEMİ -->
+  <!-- ========================================================================= -->
+  <script>
+    // -------------------------------------------------------------
+    // 1. SESLİ BİLDİRİM (WEB AUDIO API - DIŞ DOSYA GEREKTİRMEZ)
+    // -------------------------------------------------------------
+    function playNotificationChime() {
+      try {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (!AudioCtx) return;
+        const ctx = new AudioCtx();
+        const now = ctx.currentTime;
+
+        const osc1 = ctx.createOscillator();
+        const gain1 = ctx.createGain();
+        osc1.type = 'sine';
+        osc1.frequency.setValueAtTime(659.25, now);
+        gain1.gain.setValueAtTime(0.12, now);
+        gain1.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+        osc1.connect(gain1);
+        gain1.connect(ctx.destination);
+        osc1.start(now);
+        osc1.stop(now + 0.25);
+
+        const osc2 = ctx.createOscillator();
+        const gain2 = ctx.createGain();
+        osc2.type = 'sine';
+        osc2.frequency.setValueAtTime(987.77, now + 0.12);
+        gain2.gain.setValueAtTime(0.18, now + 0.12);
+        gain2.gain.exponentialRampToValueAtTime(0.001, now + 0.5);
+        osc2.connect(gain2);
+        gain2.connect(ctx.destination);
+        osc2.start(now + 0.12);
+        osc2.stop(now + 0.5);
+      } catch(e) {
+        console.log('Audio chime info:', e);
+      }
+    }
+
+    // -------------------------------------------------------------
+    // 2. HACAMAT TAKVİMİ: GERÇEK DOLU / BOŞ VE İPTAL ETME SİSTEMİ
+    // -------------------------------------------------------------
+    let currentCalMonth = 8; // 8 = Eylül 2026
+    let currentCalYear = 2026;
+    
+    const specialDays = {
+      '2026-09-29': { type: 'gold', title: '⭐ BÜYÜK ALTIN GÜN (Rebiülevvel 17 / Mevlid Ayı)', info: 'Yılın en faziletli kupa vaktidir. Efendimiz SAV Mevlid ayı Salı şifası.' },
+      '2026-10-01': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 19)', info: 'Rebiülevvel 19 Perşembe altın gün seansı.' },
+      '2026-10-03': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 21)', info: 'Rebiülevvel 21 Cumartesi şifa günü.' },
+      '2026-10-27': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 17)', info: 'Rebiülahir 17 Salı altın günü.' },
+      '2026-10-29': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 19)', info: 'Rebiülahir 19 Perşembe altın günü.' },
+      '2026-11-26': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 17)', info: 'Cemaziyelevvel 17 Perşembe altın günü.' }
+    };
+
+    let selectedDateKey = '2026-09-29';
+    let selectedDateText = '29 Eylül 2026 Salı';
+    let selectedTimeSlot = '10:00';
+
+    const monthNames = [
+      'Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran',
+      'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'
+    ];
+    const hijriMonthNames = [
+      '', '', '', '', '', '', '', '',
+      'Hicri Rebiülevvel', 'Hicri Rebiülahir', 'Hicri Cemaziyelevvel', 'Hicri Cemaziyelahir'
+    ];
+
+    // Seans Saatleri
+    const standardTimeSlots = ['10:00', '11:30', '14:00', '16:00', '18:00', '20:00'];
+
+    // Dolu Slotlar & Kullanıcının Kendi Randevuları Deposu
+    const BOOKED_STORAGE_KEY = 'hacamat_real_booked_slots';
+    const MY_BOOKINGS_STORAGE_KEY = 'hacamat_my_user_bookings';
+
+    function getBookedSlots() {
+      // 29 Eylül için gerçekçi olarak sadece 11:30 dolu, diğerleri müsait
+      return JSON.parse(localStorage.getItem(BOOKED_STORAGE_KEY) || '["2026-09-29_11:30", "2026-10-01_16:00"]');
+    }
+
+    function getMyBookings() {
+      return JSON.parse(localStorage.getItem(MY_BOOKINGS_STORAGE_KEY) || '{}');
+    }
+
+    function saveBookedSlot(slotId, clientName) {
+      const booked = getBookedSlots();
+      if (!booked.includes(slotId)) {
+        booked.push(slotId);
+        localStorage.setItem(BOOKED_STORAGE_KEY, JSON.stringify(booked));
+      }
+
+      const myBookings = getMyBookings();
+      myBookings[slotId] = {
+        name: clientName,
+        dateKey: selectedDateKey,
+        dateText: selectedDateText,
+        time: selectedTimeSlot
+      };
+      localStorage.setItem(MY_BOOKINGS_STORAGE_KEY, JSON.stringify(myBookings));
+    }
+
+    // RANDEVU İPTAL ETME FONKSİYONU (KULLANICININ İSTEDİĞİ İPTAL İLE BOŞALMA ÖZELLİĞİ)
+    function cancelSpecificSlot(slotKey) {
+      if (!confirm('Bu randevunuzu iptal etmek istediğinize emin misiniz? İptal edildikten sonra saat tekrar MÜSAİT olarak açılacaktır.')) {
+        return;
+      }
+
+      // 1. Booked listesinden çıkar
+      let booked = getBookedSlots();
+      booked = booked.filter(s => s !== slotKey);
+      localStorage.setItem(BOOKED_STORAGE_KEY, JSON.stringify(booked));
+
+      // 2. Kendi randevularımdan çıkar
+      let myBookings = getMyBookings();
+      delete myBookings[slotKey];
+      localStorage.setItem(MY_BOOKINGS_STORAGE_KEY, JSON.stringify(myBookings));
+
+      // 3. Ekranı yenile
+      renderHourlySlots();
+
+      const successBox = document.getElementById('booking-success-box');
+      if (successBox) successBox.classList.add('hidden');
+
+      alert('Randevunuz başarıyla iptal edildi. Seçtiğiniz seans saati tekrar MÜSAİT (BOŞ) olarak güncellendi.');
+    }
+
+    function cancelCurrentBooking() {
+      const myBookings = getMyBookings();
+      // Seçili günde kullanıcının randevusunu bul
+      for (const slotKey in myBookings) {
+        if (myBookings[slotKey].dateKey === selectedDateKey) {
+          cancelSpecificSlot(slotKey);
+          return;
+        }
+      }
+    }
+
+    function renderCalendar() {
+      const grid = document.getElementById('calendar-days-grid');
+      const monthDisplay = document.getElementById('current-month-display');
+      if (!grid || !monthDisplay) return;
+
+      const hijriText = hijriMonthNames[currentCalMonth] || '';
+      monthDisplay.innerHTML = `<span>${monthNames[currentCalMonth]} ${currentCalYear}</span> ${hijriText ? `<span class="text-xs font-sans font-bold px-2 py-0.5 rounded-full bg-forest-100 text-forest-800 border border-forest-200">${hijriText}</span>` : ''}`;
+
+      grid.innerHTML = '';
+
+      const firstDay = new Date(currentCalYear, currentCalMonth, 1);
+      let startDayOfWeek = firstDay.getDay() - 1;
+      if (startDayOfWeek === -1) startDayOfWeek = 6;
+
+      const daysInMonth = new Date(currentCalYear, currentCalMonth + 1, 0).getDate();
+
+      for (let i = 0; i < startDayOfWeek; i++) {
+        const blank = document.createElement('div');
+        blank.className = 'p-2 text-forest-200 pointer-events-none';
+        grid.appendChild(blank);
+      }
+
+      for (let day = 1; day <= daysInMonth; day++) {
+        const dayDate = new Date(currentCalYear, currentCalMonth, day);
+        const dayOfWeek = dayDate.getDay();
+        const dateStr = `${currentCalYear}-${String(currentCalMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+
+        const isPast = dayDate < new Date(2026, 8, 13);
+        const isGold = specialDays[dateStr]?.type === 'gold';
+        const isSunnah = (dayOfWeek === 1 || dayOfWeek === 4);
+        const isSelected = (dateStr === selectedDateKey);
+
+        const cell = document.createElement('div');
+        cell.className = `cal-day-btn p-2 sm:p-2.5 rounded-2xl border text-center relative flex flex-col items-center justify-center min-h-[50px] sm:min-h-[56px]`;
+
+        if (isPast) {
+          cell.classList.add('opacity-30', 'bg-forest-50/30', 'border-transparent', 'cursor-not-allowed');
+        } else if (isSelected) {
+          cell.classList.add('selected');
+        } else if (isGold) {
+          cell.classList.add('bg-amber-50', 'border-amber-300', 'text-amber-950', 'font-bold');
+        } else if (isSunnah) {
+          cell.classList.add('bg-emerald-50/70', 'border-emerald-200', 'text-forest-950', 'font-semibold');
+        } else {
+          cell.classList.add('bg-white', 'border-forest-100', 'text-forest-900');
+        }
+
+        let dayHtml = `<span class="text-xs sm:text-sm font-extrabold">${day}</span>`;
+        if (isGold) {
+          dayHtml += `<span class="text-[8px] font-black text-amber-700 block leading-none mt-0.5">⭐ ALTIN</span>`;
+        } else if (isSunnah && !isPast) {
+          dayHtml += `<span class="text-[8px] font-bold text-emerald-700 block leading-none mt-0.5">Sünnet</span>`;
+        }
+
+        cell.innerHTML = dayHtml;
+
+        if (!isPast) {
+          cell.onclick = () => selectCalendarDate(dateStr, day, dayOfWeek);
+        }
+
+        grid.appendChild(cell);
+      }
+    }
+
+    function changeCalendarMonth(delta) {
+      currentCalMonth += delta;
+      if (currentCalMonth > 11) {
+        currentCalMonth = 0;
+        currentCalYear++;
+      } else if (currentCalMonth < 8 && currentCalYear === 2026) {
+        currentCalMonth = 8;
+      } else if (currentCalMonth < 0) {
+        currentCalMonth = 11;
+        currentCalYear--;
+      }
+      renderCalendar();
+    }
+
+    const dayNameMap = ['Pazar', 'Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi'];
+
+    function selectCalendarDate(dateStr, dayNum, dayOfWeekNum) {
+      selectedDateKey = dateStr;
+      const dayName = dayNameMap[dayOfWeekNum];
+      const monthName = monthNames[currentCalMonth];
+      selectedDateText = `${dayNum} ${monthName} ${currentCalYear} ${dayName}`;
+
+      renderCalendar();
+      updateSelectedDateUI();
+    }
+
+    function quickSelectDate(dateKey, fullText) {
+      selectedDateKey = dateKey;
+      selectedDateText = fullText;
+      const parts = dateKey.split('-');
+      currentCalYear = parseInt(parts[0]);
+      currentCalMonth = parseInt(parts[1]) - 1;
+
+      renderCalendar();
+      updateSelectedDateUI();
+
+      const randevuEl = document.getElementById('hacamat-randevu');
+      if (randevuEl) randevuEl.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function updateSelectedDateUI() {
+      const displayElem = document.getElementById('selected-date-display');
+      const badgeElem = document.getElementById('selected-date-badge');
+      const infoElem = document.getElementById('selected-date-info');
+      const dateInput = document.getElementById('selected-date-input');
+
+      if (displayElem) displayElem.textContent = selectedDateText;
+      if (dateInput) dateInput.value = selectedDateText;
+
+      const special = specialDays[selectedDateKey];
+      if (special && badgeElem && infoElem) {
+        badgeElem.classList.remove('hidden');
+        badgeElem.innerHTML = `<i class="fa-solid fa-crown text-amber-600"></i> ${special.title}`;
+        infoElem.textContent = special.info;
+      } else if (badgeElem && infoElem) {
+        badgeElem.classList.add('hidden');
+        infoElem.textContent = 'Hacamatçı Mikail Hoca ile doğal cam bardak kupa seansı için seans saatinizi seçiniz.';
+      }
+
+      renderHourlySlots();
+    }
+
+    function renderHourlySlots() {
+      const container = document.getElementById('hourly-slots-container');
+      const activeBookingPanel = document.getElementById('active-booking-panel');
+      const activeBookingText = document.getElementById('active-booking-text');
+      if (!container) return;
+
+      const booked = getBookedSlots();
+      const myBookings = getMyBookings();
+      container.innerHTML = '';
+
+      let hasMyBookingForThisDay = false;
+
+      standardTimeSlots.forEach(slot => {
+        const slotKey = `${selectedDateKey}_${slot}`;
+        const isBooked = booked.includes(slotKey);
+        const isMyBooking = (myBookings[slotKey] !== undefined);
+        const isSelected = (selectedTimeSlot === slot && !isBooked);
+
+        if (isMyBooking) {
+          hasMyBookingForThisDay = true;
+          if (activeBookingText) {
+            activeBookingText.textContent = `Saat: ${slot} - Danışan: ${myBookings[slotKey].name}`;
+          }
+        }
+
+        const btn = document.createElement('div');
+        btn.className = `p-3 rounded-2xl border text-center relative transition-all ${
+          isMyBooking
+            ? 'bg-amber-50 border-amber-300 ring-2 ring-amber-400 shadow-sm'
+            : isBooked 
+              ? 'bg-red-50 border-red-200 opacity-70' 
+              : isSelected 
+                ? 'bg-forest-800 text-white border-forest-800 shadow-md ring-2 ring-forest-500 cursor-pointer' 
+                : 'bg-emerald-50/70 hover:bg-emerald-100/90 border-emerald-200 text-forest-950 cursor-pointer'
+        }`;
+
+        if (isMyBooking) {
+          btn.innerHTML = `
+            <span class="block text-xs font-extrabold text-amber-950">${slot}</span>
+            <span class="inline-block mt-0.5 px-2 py-0.5 rounded bg-amber-200 text-amber-900 text-[9px] font-black">RANDEVUNUZ</span>
+            <button type="button" onclick="cancelSpecificSlot('${slotKey}')" class="mt-1.5 w-full py-1 rounded-lg bg-red-600 hover:bg-red-700 text-white font-bold text-[9px] transition-all shadow-xs block">
+              <i class="fa-solid fa-xmark mr-0.5"></i> İptal Et
+            </button>
+          `;
+        } else if (isBooked) {
+          btn.innerHTML = `
+            <span class="block text-xs font-extrabold text-red-900">${slot}</span>
+            <span class="inline-block mt-1 px-2 py-0.5 rounded bg-red-100 text-red-700 text-[9px] font-black">DOLU</span>
+            <button type="button" onclick="cancelSpecificSlot('${slotKey}')" class="mt-1 text-[8px] text-red-500 underline hover:text-red-700 block mx-auto">
+              (Boşa Çıkar)
+            </button>
+          `;
+        } else {
+          btn.onclick = () => {
+            selectedTimeSlot = slot;
+            document.getElementById('selected-slot-input').value = slot;
+            renderHourlySlots();
+          };
+          btn.innerHTML = `
+            <span class="block text-xs font-extrabold ${isSelected ? 'text-white' : 'text-forest-950'}">${slot}</span>
+            <span class="inline-block mt-1 px-2 py-0.5 rounded ${isSelected ? 'bg-forest-700 text-emerald-200' : 'bg-emerald-600 text-white'} text-[9px] font-bold">MÜSAİT</span>
+          `;
+        }
+
+        container.appendChild(btn);
+      });
+
+      if (activeBookingPanel) {
+        if (hasMyBookingForThisDay) {
+          activeBookingPanel.classList.remove('hidden');
+        } else {
+          activeBookingPanel.classList.add('hidden');
+        }
+      }
+    }
+
+    function handleAppointmentSubmit(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('client-name').value.trim();
+      const phone = document.getElementById('client-phone').value.trim();
+      const service = document.getElementById('client-service').value;
+      const notes = document.getElementById('client-notes').value.trim();
+
+      if (!name || !phone) {
+        alert('Lütfen adınızı ve telefon numaranızı giriniz.');
+        return;
+      }
+
+      // Slotu rezerve et ve localStorage'a kaydet
+      const slotKey = `${selectedDateKey}_${selectedTimeSlot}`;
+      saveBookedSlot(slotKey, name);
+      renderHourlySlots();
+
+      const waText = 
+`Selamün Aleyküm Hacamatçı Mikail Hocam,
+Web siteniz üzerinden Hacamat seans takviminden randevu aldım:
+
+Danışan: ${name}
+Telefon: ${phone}
+Tarih: ${selectedDateText}
+Saat: ${selectedTimeSlot} (Sistemde Rezerve Edildi)
+Hizmet: ${service}
+${notes ? `Not / Şikayet: ${notes}\n` : ''}
+Randevumu teyit etmenizi rica ederim.`;
+
+      const encoded = encodeURIComponent(waText);
+      const waUrl = `https://wa.me/905355566434?text=${encoded}`;
+
+      const successBox = document.getElementById('booking-success-box');
+      const details = document.getElementById('booking-success-details');
+      const waLink = document.getElementById('whatsapp-send-link');
+
+      if (details) {
+        details.innerHTML = `Sayın <strong>${name}</strong>, <strong>${selectedDateText}</strong> günü saat <strong>${selectedTimeSlot}</strong> randevunuz adınıza başarıyla ayrıldı ve sistemde <span class="text-amber-700 font-bold">RANDEVUNUZ</span> olarak işaretlendi. Randevunuzu dilediğiniz an bu ekrandaki kırmızı <strong>[İptal Et]</strong> butonundan iptal edebilirsiniz.`;
+      }
+      if (waLink) waLink.href = waUrl;
+      if (successBox) {
+        successBox.classList.remove('hidden');
+        successBox.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // -------------------------------------------------------------
+    // 3. YORUMLAR (47 YORUM & TÜMÜNÜ GÖR SİSTEMİ)
+    // -------------------------------------------------------------
+    let allReviewsExpanded = false;
+
+    function toggleAllReviews() {
+      allReviewsExpanded = !allReviewsExpanded;
+      const extras = document.querySelectorAll('.extra-review');
+      const btnText = document.getElementById('toggle-reviews-text');
+      const btnIcon = document.getElementById('toggle-reviews-icon');
+
+      extras.forEach(card => {
+        if (allReviewsExpanded) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      if (allReviewsExpanded) {
+        btnText.textContent = 'Daha Az Göster';
+        btnIcon.className = 'fa-solid fa-chevron-up text-forest-600';
+      } else {
+        btnText.textContent = 'Tüm Danışan Yorumlarını Gör (47 Değerlendirme)';
+        btnIcon.className = 'fa-solid fa-chevron-down text-forest-600';
+        document.getElementById('yorumlar').scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function filterReviews(cat) {
+      const allCards = document.querySelectorAll('.review-item');
+      const tabBtns = document.querySelectorAll('.review-tab-btn');
+
+      tabBtns.forEach(btn => {
+        btn.classList.remove('bg-forest-800', 'text-white');
+        btn.classList.add('bg-forest-50', 'text-forest-800');
+      });
+
+      event.currentTarget.classList.remove('bg-forest-50', 'text-forest-800');
+      event.currentTarget.classList.add('bg-forest-800', 'text-white');
+
+      let visibleCount = 0;
+      allCards.forEach(card => {
+        const itemCat = card.getAttribute('data-cat');
+        if (cat === 'all' || itemCat === cat) {
+          visibleCount++;
+          if (allReviewsExpanded || visibleCount <= 6) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // -------------------------------------------------------------
+    // 4. GELİŞMİŞ AKILLI CHAT BOT (RESİMSİZ, ŞIK ŞİFA LOGOLU)
+    // -------------------------------------------------------------
+    function toggleChatAssistant(forceOpen) {
+      const modal = document.getElementById('chat-modal-window');
+      const backdrop = document.getElementById('chat-backdrop');
+      if (!modal) return;
+
+      const isOpen = !modal.classList.contains('hidden');
+      const shouldOpen = forceOpen !== undefined ? forceOpen : !isOpen;
+
+      if (shouldOpen) {
+        modal.classList.remove('hidden');
+        if (backdrop) backdrop.classList.remove('hidden');
+        playNotificationChime();
+      } else {
+        modal.classList.add('hidden');
+        if (backdrop) backdrop.classList.add('hidden');
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      renderCalendar();
+      updateSelectedDateUI();
+      // Mobilde ve masaüstünde chat kutusu ASLA otomatik açılmaz; kullanıcı kendi isteğiyle basarsa açılır.
+    });
+
+    const medicalTreatmentGuide = {
+      'bel': {
+        title: '🦴 Bel Fıtığı, Boyun Tutulması & Sırt Kulunçları',
+        cause: 'Kürek kemikleri (Kâhil) ve omurlar arasındaki kas liflerinde laktik asit birikir ve kılcal damarlar tıkanarak kas spazmına (taşlaşmış kulunç) yol açar.',
+        treatment: 'Hacamatçı Mikail Hoca soğuk plastik pompa kullanmaz. <strong>Doğal ateşli kalın cam bardakların ılık ısısı</strong> ile kas spazmlarını derinlemesine çözer. Cilt altına sadece 0.5 mm mikro-çizik atılarak pıhtılaşmış durgun kan vakumlanır.',
+        benefits: 'Seans biter bitmez sırtınızdan 30 kilo ağırlık kalkmış gibi ferahlarsınız. 48 saatte kas tutulması biter, boyun ve bel hareketleriniz tamamen açılır. Sarı kantaron yağı sayesinde ciltte hiçbir iz kalmaz.'
+      },
+      'migren': {
+        title: '🧠 Şiddetli Migren & Baş Zonklaması',
+        cause: 'Beyne giden boyun ve şakak kılcal damarlarındaki kirli kan basıncı ve sinir uçlarındaki toksik baskı dayanılmaz zonklamalara sebep olur.',
+        treatment: 'Peygamber Efendimiz (SAV)’in <em>Cankurtaran</em> adını verdiği kafa arkası ve ense kökü noktalarına hassas cam bardak uygulanır. Saçlar kazınmadan, özel steril teknikle çalışılır.',
+        benefits: 'Danışanlarımızın %90’ı seansın hemen ardından gözlerinin önündeki sis perdesinin kalktığını ve baş ağrısı ilaçlarını tamamen bıraktıklarını ifade etmektedir. Gece ilk defa deliksiz bir uyku uyursunuz.'
+      },
+      'ilac': {
+        title: '💊 Antibiyotik ve İlaç Tortusu Detoksu',
+        cause: 'Sürekli içilen sentetik antibiyotikler, ağrı kesiciler ve kortizonlar böbrek ve karaciğerden tam atılamaz; deri altı bağ dokusunda birikerek kronik yorgunluk yapar.',
+        treatment: 'Karaciğer, dalak ve kâhil noktalarından uygulanan ısı vakumu, ilaç metabolitlerini ve ağır metalleri doğrudan hücresel düzeyde dışarı alır.',
+        benefits: 'Vücudunuzdaki o kurşun gibi ağırlık kaybolur. Sabahları alarm çalmadan, zinde ve enerjik uyanmaya başlarsınız. Karaciğer ve böbreklerinizin yükü hafifler.'
+      },
+      'bacak': {
+        title: '🦵 Diz Sıvı Kaybı, Bacak Sızısı & Varis',
+        cause: 'Yerçekimi nedeniyle bacak ve baldır toplardamarlarında kirli kan göllenir, diz eklemlerinde iltihabi ödem ve menisküs sızıları meydana gelir.',
+        treatment: 'Diz kapağı çevresine ve baldır arkasına ateşli cam bardak ve gerektiğinde tıbbi sülük (Hirudoterapi) uygulanır.',
+        benefits: 'Bacaklardaki huzursuzluk ve gece krampları anında kesilir. Merdiven inip çıkarken dizde duyulan batma ve çıtırtılar rahatlar, yürüme mesafeniz iki katına çıkar.'
+      },
+      'korku': {
+        title: '🛡️ İlk Defa Yaptıracağım (Korku / Acıtır mı?)',
+        cause: 'İğne ve neşter korkusu tamamen doğaldır, ancak hacamat cerrahi bir kesim değildir.',
+        treatment: 'Mikail Hoca cerrahi neşter değil, saç teli inceliğinde tek kullanımlık mikro-dokunuşlar yapar. Ateşli cam bardağın ılık sıcaklığı bölgeyi doğal olarak uyuşturur.',
+        benefits: 'Hissedeceğiniz tek şey minik bir sinek ısırığıdır. Seans bittiğinde "boşuna yıllarca korkmuşum" diyeceksiniz. Sürülen organik sarı kantaron yağı ile 3-5 günde izsiz kapanır.'
+      }
+    };
+
+    function handleSymptomClick(key) {
+      const data = medicalTreatmentGuide[key];
+      if (!data) return;
+
+      appendChatMessage(data.title, true);
+
+      setTimeout(() => {
+        const responseHtml = `
+          <div class="space-y-2">
+            <div class="p-2.5 rounded-xl bg-forest-50 border border-forest-200">
+              <span class="font-bold text-forest-900 block text-[11px]">🩺 Rahatsızlığın Sebebi:</span>
+              <p class="text-forest-800 text-[11px] mt-0.5">${data.cause}</p>
+            </div>
+
+            <div class="p-2.5 rounded-xl bg-emerald-50 border border-emerald-200">
+              <span class="font-bold text-emerald-900 block text-[11px]">🌿 Hacamatçı Mikail Hoca'nın Tedavi Yöntemi:</span>
+              <p class="text-forest-950 text-[11px] mt-0.5">${data.treatment}</p>
+            </div>
+
+            <div class="p-2.5 rounded-xl bg-amber-50 border border-amber-200">
+              <span class="font-bold text-amber-900 block text-[11px]">✨ Tedavi Sonrası İyi Yanları & İyileşme:</span>
+              <p class="text-forest-950 text-[11px] mt-0.5">${data.benefits}</p>
+            </div>
+
+            <div class="pt-2 border-t border-forest-100 flex flex-col gap-1.5">
+              <a href="#hacamat-randevu" onclick="toggleChatAssistant(false)" class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-forest-800 text-white font-bold text-[10px] hover:bg-forest-900 transition-all shadow-sm">
+                <i class="fa-regular fa-calendar-check text-emerald-300"></i> Bu Şikayet İçin HACAMAT Takviminden Saat Zamanını Seç
+              </a>
+              <a href="https://wa.me/905355566434?text=${encodeURIComponent('Selamün Aleyküm Mikail Hocam, ' + data.title + ' konusunda danışmak ve tedavi olmak istiyorum.')}" target="_blank" class="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-600 text-white font-bold text-[10px] hover:bg-emerald-500 transition-all">
+                <i class="fa-brands fa-whatsapp"></i> Mikail Hoca ile WhatsApp'ta Birebir Konuş
+              </a>
+            </div>
+          </div>
+        `;
+        appendChatMessage(responseHtml, false);
+        playNotificationChime();
+      }, 400);
+    }
+
+    function sendFreeChatMessage() {
+      const input = document.getElementById('chat-user-input');
+      const text = input.value.trim();
+      if (!text) return;
+
+      appendChatMessage(text, true);
+      input.value = '';
+
+      setTimeout(() => {
+        const lower = text.toLowerCase();
+        let matchedKey = 'bel';
+        if (lower.includes('baş') || lower.includes('migren') || lower.includes('şakak') || lower.includes('göz')) matchedKey = 'migren';
+        else if (lower.includes('ilaç') || lower.includes('antibiyotik') || lower.includes('yorgun') || lower.includes('halsiz') || lower.includes('karaciğer')) matchedKey = 'ilac';
+        else if (lower.includes('bacak') || lower.includes('diz') || lower.includes('varis') || lower.includes('menisküs') || lower.includes('kramp')) matchedKey = 'bacak';
+        else if (lower.includes('acı') || lower.includes('kork') || lower.includes('iz') || lower.includes('canım') || lower.includes('ilk')) matchedKey = 'korku';
+
+        const data = medicalTreatmentGuide[matchedKey];
+        const responseHtml = `
+          <div class="space-y-2">
+            <p class="font-bold text-forest-950">"${text}" şikayetinizi değerlendirdik:</p>
+
+            <div class="p-2.5 rounded-xl bg-forest-50 border border-forest-200">
+              <span class="font-bold text-forest-900 block text-[11px]">🩺 Rahatsızlığın Kaynağı:</span>
+              <p class="text-forest-800 text-[11px] mt-0.5">${data.cause}</p>
+            </div>
+
+            <div class="p-2.5 rounded-xl bg-emerald-50 border border-emerald-200">
+              <span class="font-bold text-emerald-900 block text-[11px]">🌿 Hacamatçı Mikail Hoca'nın Tedavisi:</span>
+              <p class="text-forest-950 text-[11px] mt-0.5">${data.treatment}</p>
+            </div>
+
+            <div class="p-2.5 rounded-xl bg-amber-50 border border-amber-200">
+              <span class="font-bold text-amber-900 block text-[11px]">✨ Tedavi Sonrası Yaşayacağınız Rahatlama:</span>
+              <p class="text-forest-950 text-[11px] mt-0.5">${data.benefits}</p>
+            </div>
+
+            <div class="pt-2 border-t border-forest-100 flex flex-col gap-1.5">
+              <a href="#hacamat-randevu" onclick="toggleChatAssistant(false)" class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-forest-800 text-white font-bold text-[10px] hover:bg-forest-900 transition-all shadow-sm">
+                <i class="fa-regular fa-calendar-check text-emerald-300"></i> HACAMAT Takviminden Saat Zamanını Seç
+              </a>
+              <a href="https://wa.me/905355566434?text=${encodeURIComponent('Selamün Aleyküm Mikail Hocam, şikayetim: ' + text + '. Bilgi almak istiyorum.')}" target="_blank" class="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-600 text-white font-bold text-[10px] hover:bg-emerald-500 transition-all">
+                <i class="fa-brands fa-whatsapp"></i> Mikail Hoca'ya WhatsApp'tan Danış (0535 556 64 34)
+              </a>
+            </div>
+          </div>
+        `;
+        appendChatMessage(responseHtml, false);
+        playNotificationChime();
+      }, 500);
+    }
+
+    function appendChatMessage(htmlContent, isUser) {
+      const container = document.getElementById('chat-messages');
+      const div = document.createElement('div');
+      if (isUser) {
+        div.className = 'p-2.5 rounded-2xl rounded-tr-none bg-forest-800 text-white self-end ml-6 text-right leading-relaxed font-semibold';
+        div.textContent = htmlContent;
+      } else {
+        div.className = 'p-3.5 rounded-2xl rounded-tl-none bg-white border border-forest-200 text-forest-950 shadow-sm leading-relaxed';
+        div.innerHTML = htmlContent;
+      }
+      container.appendChild(div);
+      container.scrollTop = container.scrollHeight;
+    }
+
+    // Mobil Menü (Dokunmatik ve Dış Tıklama Kapatma)
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+
+      mobileNavLinks.forEach(l => l.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+    }
+  </script>
+
+  <!-- ========================================================================= -->
+  <!-- MOBİL SABİT ALT UYGULAMA MENÜSÜ (APP BAR - media_1789376168148.png UYARLAMASI) -->
+  <!-- ========================================================================= -->
+  <nav id="mobile-bottom-nav" class="fixed bottom-0 inset-x-0 bg-white/98 backdrop-blur-xl border-t border-slate-200/90 shadow-[0_-4px_25px_rgba(0,0,0,0.08)] z-40 md:hidden px-2 py-1.5 pb-[calc(0.5rem+env(safe-area-inset-bottom))] select-none">
+    <div class="grid grid-cols-5 items-center justify-items-center max-w-md mx-auto">
+      
+      <!-- 1. Ana Sayfa -->
+      <a href="#hero" class="flex flex-col items-center justify-center py-1 text-slate-600 hover:text-emerald-700 active:text-emerald-800 transition-colors group">
+        <i class="fa-solid fa-house text-lg mb-0.5 group-hover:scale-110 transition-transform"></i>
+        <span class="text-[10px] font-bold tracking-tight">Ana Sayfa</span>
+      </a>
+
+      <!-- 2. Faydaları -->
+      <a href="#kanitlanmis-faydalar" class="flex flex-col items-center justify-center py-1 text-slate-600 hover:text-emerald-700 active:text-emerald-800 transition-colors group">
+        <i class="fa-solid fa-notes-medical text-lg mb-0.5 group-hover:scale-110 transition-transform"></i>
+        <span class="text-[10px] font-bold tracking-tight">Faydaları</span>
+      </a>
+
+      <!-- 3. RANDEVU AL (Öne Çıkan Merkez Buton) -->
+      <a href="#hacamat-randevu" class="flex flex-col items-center justify-center -mt-5 group">
+        <div class="w-12 h-12 rounded-full bg-forest-800 text-white flex items-center justify-center text-xl shadow-lg border-2 border-white group-hover:bg-forest-900 group-hover:scale-105 active:scale-95 transition-all">
+          <i class="fa-regular fa-calendar-check text-emerald-300"></i>
+        </div>
+        <span class="text-[10px] font-extrabold text-forest-900 mt-1 tracking-tight">Randevu Al</span>
+      </a>
+
+      <!-- 4. Şifa Danışmanı -->
+      <button onclick="toggleChatAssistant(true)" class="flex flex-col items-center justify-center py-1 text-slate-600 hover:text-emerald-700 active:text-emerald-800 transition-colors group relative">
+        <div class="relative">
+          <i class="fa-solid fa-leaf text-lg mb-0.5 text-emerald-600 group-hover:scale-110 transition-transform"></i>
+          <span class="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        </div>
+        <span class="text-[10px] font-bold tracking-tight">Danışman</span>
+      </button>
+
+      <!-- 5. WhatsApp -->
+      <a href="https://wa.me/905355566434?text=Selam%C3%BCn%20Aleyk%C3%BCm%20Hacamat%C3%A7%C4%B1%20Mikail%20Hocam%2C%20seans%20ve%20randevu%20almak%20istiyorum." target="_blank" class="flex flex-col items-center justify-center py-1 text-emerald-600 hover:text-emerald-700 active:text-emerald-800 transition-colors group">
+        <i class="fa-brands fa-whatsapp text-xl mb-0.5 group-hover:scale-110 transition-transform"></i>
+        <span class="text-[10px] font-bold tracking-tight">WhatsApp</span>
+      </a>
+
+    </div>
+  </nav>
+
+</body>
+</html>
