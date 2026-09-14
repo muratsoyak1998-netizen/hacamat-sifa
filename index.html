@@ -249,7 +249,7 @@
           </div>
           <div class="flex flex-col justify-center">
             <div class="font-serif text-sm sm:text-xl font-extrabold tracking-tight text-forest-950 flex flex-wrap items-center gap-1 sm:gap-2 leading-tight">
-              <span class="truncate">MİKAİL HOCA</span>
+              <span class="truncate">HACAMATÇI MİKAİL HOCA</span>
               <span class="px-1.5 py-0.5 text-[8px] sm:text-[10px] font-extrabold bg-brandgreen-sage text-forest-800 rounded-full border border-forest-200">10 YIL</span>
             </div>
             <div class="text-[8px] sm:text-[10px] tracking-wider text-forest-700 uppercase font-sans font-bold mt-0.5 hidden sm:block">
@@ -3138,7 +3138,7 @@ Randevumu teyit etmenizi rica ederim.`;
       </a>
 
       <!-- 4. Şifa Danışmanı -->
-      <button onclick="toggleChatAssistant(true)" class="flex flex-col items-center justify-center py-1 text-slate-600 hover:text-emerald-700 active:text-emerald-800 transition-colors group relative">
+      <button onclick="openWaForm()" class="flex flex-col items-center justify-center py-1 text-slate-600 hover:text-emerald-700 active:text-emerald-800 transition-colors group relative">
         <div class="relative">
           <i class="fa-solid fa-leaf text-lg mb-0.5 text-emerald-600 group-hover:scale-110 transition-transform"></i>
           <span class="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
@@ -3157,9 +3157,9 @@ Randevumu teyit etmenizi rica ederim.`;
 
 
   <!-- WhatsApp Form Modal (Danışman) -->
-  <div id="wa-form-modal" class="hidden fixed inset-0 z-[60] flex items-end justify-center sm:items-center">
+  <div id="wa-form-modal" class="hidden fixed inset-0 z-[9999] flex items-end justify-center sm:items-center">
     <div class="absolute inset-0 bg-forest-950/60 backdrop-blur-sm" onclick="document.getElementById('wa-form-modal').classList.add('hidden')"></div>
-    <div class="bg-white w-full sm:w-[400px] rounded-t-3xl sm:rounded-3xl p-6 relative z-10 animate-[slideUp_0.3s_ease-out]">
+    <div class="bg-white w-full sm:w-[400px] rounded-t-3xl sm:rounded-3xl p-6 relative z-10 ">
       <div class="flex justify-between items-center mb-4">
         <h3 class="font-serif text-lg font-bold text-forest-950 flex items-center gap-2">
           <i class="fa-brands fa-whatsapp text-emerald-500 text-xl"></i> Ücretsiz Danışma
