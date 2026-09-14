@@ -941,21 +941,7 @@
             İstediğiniz tarihe tıklayın; canlı yeşil <strong>[MÜSAİT]</strong> saatlerden birini seçip randevunuzu oluşturun. Aldığınız randevuyu dilediğiniz an tek tıkla <strong>İptal Edip</strong> tekrar boş duruma getirebilirsiniz.
           </p>
 
-          <!-- Hızlı Tarih Seçim Şeridi (29 Eylül Büyük Gün Öncelikli) -->
-          <div class="flex flex-wrap items-center justify-center gap-2.5 mt-6">
-            <button onclick="quickSelectDate('2026-09-29', '29 Eylül 2026 Salı')" class="quick-date-btn px-4 py-2.5 rounded-2xl bg-amber-100 hover:bg-amber-200 border-2 border-amber-400 text-amber-950 font-extrabold text-xs shadow-sm flex items-center gap-2 transition-all">
-              <i class="fa-solid fa-crown text-amber-600"></i> 29 Eylül Salı (Büyük Altın Gün)
-            </button>
-            <button onclick="quickSelectDate('2026-09-14', '14 Eylül 2026 Pazartesi')" class="quick-date-btn px-4 py-2 rounded-2xl bg-white hover:bg-forest-50 border border-forest-200 text-forest-900 font-bold text-xs transition-all">
-              🌱 14 Eylül Pazartesi (Yarın)
-            </button>
-            <button onclick="quickSelectDate('2026-10-01', '1 Ekim 2026 Perşembe')" class="quick-date-btn px-4 py-2 rounded-2xl bg-white hover:bg-forest-50 border border-forest-200 text-forest-900 font-bold text-xs transition-all">
-              ⭐ 1 Ekim Perşembe (Altın Gün)
-            </button>
-            <button onclick="quickSelectDate('2026-10-03', '3 Ekim 2026 Cumartesi')" class="quick-date-btn px-4 py-2 rounded-2xl bg-white hover:bg-forest-50 border border-forest-200 text-forest-900 font-bold text-xs transition-all">
-              ⭐ 3 Ekim Cumartesi (Altın Gün)
-            </button>
-          </div>
+          
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -2526,98 +2512,35 @@
     // -------------------------------------------------------------
     // 2. HACAMAT TAKVİMİ: GERÇEK DOLU / BOŞ VE İPTAL ETME SİSTEMİ
     // -------------------------------------------------------------
-    let currentCalMonth = 8; // 8 = Eylül 2026
-    let currentCalYear = 2026;
+    let today = new Date();
+    let currentCalMonth = today.getMonth();
+    let currentCalYear = today.getFullYear();
     
-    const specialDays = {
-      '2026-09-29': { type: 'gold', title: '⭐ BÜYÜK ALTIN GÜN (Rebiülevvel 17 / Mevlid Ayı)', info: 'Yılın en faziletli kupa vaktidir. Efendimiz SAV Mevlid ayı Salı şifası.' },
-      '2026-10-01': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 19)', info: 'Rebiülevvel 19 Perşembe altın gün seansı.' },
-      '2026-10-03': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 21)', info: 'Rebiülevvel 21 Cumartesi şifa günü.' },
-      '2026-10-27': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 17)', info: 'Rebiülahir 17 Salı altın günü.' },
-      '2026-10-29': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 19)', info: 'Rebiülahir 19 Perşembe altın günü.' },
-      '2026-11-26': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 17)', info: 'Cemaziyelevvel 17 Perşembe altın günü.' }
-    };
+    // Rüyet-i Hilal için ±1 gün ayarlaması yapılabilir (0 = standart Umm al-Qura)
+    let hijriOffsetDays = 0; 
 
-    let selectedDateKey = '2026-09-29';
-    let selectedDateText = '29 Eylül 2026 Salı';
+    let selectedDateKey = '';
+    let selectedDateText = '';
     let selectedTimeSlot = '10:00';
 
     const monthNames = [
       'Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran',
       'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'
     ];
-    const hijriMonthNames = [
-      '', '', '', '', '', '', '', '',
-      'Hicri Rebiülevvel', 'Hicri Rebiülahir', 'Hicri Cemaziyelevvel', 'Hicri Cemaziyelahir'
-    ];
 
     // Seans Saatleri
     const standardTimeSlots = ['10:00', '11:30', '14:00', '16:00', '18:00', '20:00'];
 
-    // Dolu Slotlar & Kullanıcının Kendi Randevuları Deposu
-    const BOOKED_STORAGE_KEY = 'hacamat_real_booked_slots';
-    const MY_BOOKINGS_STORAGE_KEY = 'hacamat_my_user_bookings';
-
-    function getBookedSlots() {
-      // 29 Eylül için gerçekçi olarak sadece 11:30 dolu, diğerleri müsait
-      return JSON.parse(localStorage.getItem(BOOKED_STORAGE_KEY) || '["2026-09-29_11:30", "2026-10-01_16:00"]');
-    }
-
-    function getMyBookings() {
-      return JSON.parse(localStorage.getItem(MY_BOOKINGS_STORAGE_KEY) || '{}');
-    }
-
-    function saveBookedSlot(slotId, clientName) {
-      const booked = getBookedSlots();
-      if (!booked.includes(slotId)) {
-        booked.push(slotId);
-        localStorage.setItem(BOOKED_STORAGE_KEY, JSON.stringify(booked));
-      }
-
-      const myBookings = getMyBookings();
-      myBookings[slotId] = {
-        name: clientName,
-        dateKey: selectedDateKey,
-        dateText: selectedDateText,
-        time: selectedTimeSlot
-      };
-      localStorage.setItem(MY_BOOKINGS_STORAGE_KEY, JSON.stringify(myBookings));
-    }
-
-    // RANDEVU İPTAL ETME FONKSİYONU (KULLANICININ İSTEDİĞİ İPTAL İLE BOŞALMA ÖZELLİĞİ)
-    function cancelSpecificSlot(slotKey) {
-      if (!confirm('Bu randevunuzu iptal etmek istediğinize emin misiniz? İptal edildikten sonra saat tekrar MÜSAİT olarak açılacaktır.')) {
-        return;
-      }
-
-      // 1. Booked listesinden çıkar
-      let booked = getBookedSlots();
-      booked = booked.filter(s => s !== slotKey);
-      localStorage.setItem(BOOKED_STORAGE_KEY, JSON.stringify(booked));
-
-      // 2. Kendi randevularımdan çıkar
-      let myBookings = getMyBookings();
-      delete myBookings[slotKey];
-      localStorage.setItem(MY_BOOKINGS_STORAGE_KEY, JSON.stringify(myBookings));
-
-      // 3. Ekranı yenile
-      renderHourlySlots();
-
-      const successBox = document.getElementById('booking-success-box');
-      if (successBox) successBox.classList.add('hidden');
-
-      alert('Randevunuz başarıyla iptal edildi. Seçtiğiniz seans saati tekrar MÜSAİT (BOŞ) olarak güncellendi.');
-    }
-
-    function cancelCurrentBooking() {
-      const myBookings = getMyBookings();
-      // Seçili günde kullanıcının randevusunu bul
-      for (const slotKey in myBookings) {
-        if (myBookings[slotKey].dateKey === selectedDateKey) {
-          cancelSpecificSlot(slotKey);
-          return;
-        }
-      }
+    // Dinamik Hicri Hesaplama (Rüyet-i Hilal / Umm al-Qura tabanlı)
+    function getHijriDate(year, month, day) {
+      const d = new Date(year, month, day);
+      d.setDate(d.getDate() + hijriOffsetDays);
+      const formatter = new Intl.DateTimeFormat('tr-TR-u-ca-islamic', {day: 'numeric', month: 'long', year: 'numeric'});
+      const parts = formatter.formatToParts(d);
+      const hDay = parseInt(parts.find(p => p.type === 'day').value, 10);
+      const hMonth = parts.find(p => p.type === 'month').value;
+      const hYear = parts.find(p => p.type === 'year').value;
+      return { day: hDay, month: hMonth, year: hYear };
     }
 
     function renderCalendar() {
@@ -2625,8 +2548,11 @@
       const monthDisplay = document.getElementById('current-month-display');
       if (!grid || !monthDisplay) return;
 
-      const hijriText = hijriMonthNames[currentCalMonth] || '';
-      monthDisplay.innerHTML = `<span>${monthNames[currentCalMonth]} ${currentCalYear}</span> ${hijriText ? `<span class="text-xs font-sans font-bold px-2 py-0.5 rounded-full bg-forest-100 text-forest-800 border border-forest-200">${hijriText}</span>` : ''}`;
+      // Ayın ortasındaki bir günün Hicri ayını başlıkta gösterelim
+      const midMonthHijri = getHijriDate(currentCalYear, currentCalMonth, 15);
+      const hijriText = "Hicri " + midMonthHijri.month;
+      
+      monthDisplay.innerHTML = `<span>${monthNames[currentCalMonth]} ${currentCalYear}</span> <span class="text-xs font-sans font-bold px-2 py-0.5 rounded-full bg-forest-100 text-forest-800 border border-forest-200">${hijriText}</span>`;
 
       grid.innerHTML = '';
 
@@ -2642,14 +2568,24 @@
         grid.appendChild(blank);
       }
 
+      let now = new Date();
+      now.setHours(0,0,0,0);
+
       for (let day = 1; day <= daysInMonth; day++) {
         const dayDate = new Date(currentCalYear, currentCalMonth, day);
         const dayOfWeek = dayDate.getDay();
         const dateStr = `${currentCalYear}-${String(currentCalMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
 
-        const isPast = dayDate < new Date(2026, 8, 13);
-        const isGold = specialDays[dateStr]?.type === 'gold';
+        const isPast = dayDate < now;
+        
+        const hijriInfo = getHijriDate(currentCalYear, currentCalMonth, day);
+        const hDay = hijriInfo.day;
+        
+        // Hicri 17, 19, 21 Altın Günlerdir
+        const isGold = (hDay === 17 || hDay === 19 || hDay === 21);
+        // Sünnet Günleri: Pazartesi (1) ve Perşembe (4)
         const isSunnah = (dayOfWeek === 1 || dayOfWeek === 4);
+        
         const isSelected = (dateStr === selectedDateKey);
 
         const cell = document.createElement('div');
@@ -2677,7 +2613,7 @@
         cell.innerHTML = dayHtml;
 
         if (!isPast) {
-          cell.onclick = () => selectCalendarDate(dateStr, day, dayOfWeek);
+          cell.onclick = () => selectCalendarDate(dateStr, day, dayOfWeek, hijriInfo);
         }
 
         grid.appendChild(cell);
@@ -2700,11 +2636,16 @@
 
     const dayNameMap = ['Pazar', 'Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi'];
 
-    function selectCalendarDate(dateStr, dayNum, dayOfWeekNum) {
+    function selectCalendarDate(dateStr, dayNum, dayOfWeekNum, hijriInfo = null) {
       selectedDateKey = dateStr;
       const dayName = dayNameMap[dayOfWeekNum];
       const monthName = monthNames[currentCalMonth];
       selectedDateText = `${dayNum} ${monthName} ${currentCalYear} ${dayName}`;
+
+      // Save the selected Hijri info globally to update UI
+      if (hijriInfo) {
+          window.selectedHijriInfo = hijriInfo;
+      }
 
       renderCalendar();
       updateSelectedDateUI();
@@ -2730,17 +2671,23 @@
       const infoElem = document.getElementById('selected-date-info');
       const dateInput = document.getElementById('selected-date-input');
 
-      if (displayElem) displayElem.textContent = selectedDateText;
+      if (displayElem) displayElem.textContent = selectedDateText || 'Bir tarih seçin';
       if (dateInput) dateInput.value = selectedDateText;
 
-      const special = specialDays[selectedDateKey];
-      if (special && badgeElem && infoElem) {
-        badgeElem.classList.remove('hidden');
-        badgeElem.innerHTML = `<i class="fa-solid fa-crown text-amber-600"></i> ${special.title}`;
-        infoElem.textContent = special.info;
+      const hInfo = window.selectedHijriInfo;
+      if (hInfo && badgeElem && infoElem) {
+        const isGold = (hInfo.day === 17 || hInfo.day === 19 || hInfo.day === 21);
+        if (isGold) {
+            badgeElem.classList.remove('hidden');
+            badgeElem.innerHTML = `<i class="fa-solid fa-crown text-amber-600"></i> BÜYÜK ALTIN GÜN`;
+            infoElem.textContent = `Hicri ${hInfo.day} ${hInfo.month} ${hInfo.year}. Yılın en faziletli kupa vaktidir.`;
+        } else {
+            badgeElem.classList.add('hidden');
+            infoElem.textContent = `Hicri ${hInfo.day} ${hInfo.month} ${hInfo.year}. Doğal cam bardak kupa seansı için müsait saatinizi seçiniz.`;
+        }
       } else if (badgeElem && infoElem) {
         badgeElem.classList.add('hidden');
-        infoElem.textContent = 'Hacamatçı Mikail Hoca ile doğal cam bardak kupa seansı için seans saatinizi seçiniz.';
+        infoElem.textContent = 'Lütfen takvimden bir tarih seçin.';
       }
 
       renderHourlySlots();
