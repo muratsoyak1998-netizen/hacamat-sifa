@@ -955,7 +955,10 @@
                   <span>Eylül 2026</span>
                   <span class="text-xs font-sans font-bold px-2.5 py-0.5 rounded-full bg-forest-100 text-forest-800 border border-forest-200">Rebiülevvel</span>
                 </h3>
-                <span class="text-[11px] text-forest-600 block mt-0.5">Randevu günü için tıklayınız</span>
+                <label class="text-[11px] text-forest-600 flex items-center gap-2 mt-1.5 cursor-pointer">
+                  <span>Veya tarih seçin:</span>
+                  <input type="date" id="native-date-picker" onchange="handleNativeDateSelect(event)" class="p-1 rounded border border-forest-200 text-xs text-forest-900 bg-forest-50 focus:outline-none" />
+                </label>
               </div>
               <div class="flex items-center gap-1.5">
                 <button onclick="changeCalendarMonth(-1)" class="w-8 h-8 rounded-xl bg-forest-50 hover:bg-forest-100 border border-forest-200 flex items-center justify-center text-forest-800 text-xs transition-all" title="Önceki Ay">
@@ -2574,9 +2577,14 @@
       for (let day = 1; day <= daysInMonth; day++) {
         const dayDate = new Date(currentCalYear, currentCalMonth, day);
         const dayOfWeek = dayDate.getDay();
+        
         const dateStr = `${currentCalYear}-${String(currentCalMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-
         const isPast = dayDate < now;
+        
+        const allBookings = [...getBookedSlots(), ...Object.keys(getMyBookings())];
+        const dayBookings = allBookings.filter(s => s.startsWith(dateStr));
+        const isDayFull = dayBookings.length >= standardTimeSlots.length;
+
         
         const hijriInfo = getHijriDate(currentCalYear, currentCalMonth, day);
         const hDay = hijriInfo.day;
@@ -2593,6 +2601,8 @@
 
         if (isPast) {
           cell.classList.add('opacity-30', 'bg-forest-50/30', 'border-transparent', 'cursor-not-allowed');
+        } else if (isDayFull) {
+          cell.classList.add('bg-red-50', 'border-red-300', 'text-red-900', 'opacity-60', 'cursor-not-allowed');
         } else if (isSelected) {
           cell.classList.add('selected');
         } else if (isGold) {
@@ -2604,7 +2614,9 @@
         }
 
         let dayHtml = `<span class="text-xs sm:text-sm font-extrabold">${day}</span>`;
-        if (isGold) {
+        if (isDayFull && !isPast) {
+          dayHtml += `<span class="text-[8px] font-black text-red-700 block leading-none mt-0.5">DOLU</span>`;
+        } else if (isGold) {
           dayHtml += `<span class="text-[8px] font-black text-amber-700 block leading-none mt-0.5">⭐ ALTIN</span>`;
         } else if (isSunnah && !isPast) {
           dayHtml += `<span class="text-[8px] font-bold text-emerald-700 block leading-none mt-0.5">Sünnet</span>`;
@@ -2612,7 +2624,7 @@
 
         cell.innerHTML = dayHtml;
 
-        if (!isPast) {
+        if (!isPast && !isDayFull) {
           cell.onclick = () => selectCalendarDate(dateStr, day, dayOfWeek, hijriInfo);
         }
 
