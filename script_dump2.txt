@@ -1,0 +1,65 @@
+function renderCalendar() {
+      const grid = document.getElementById('calendar-days-grid');
+      const monthDisplay = document.getElementById('current-month-display');
+      if (!grid || !monthDisplay) return;
+
+      const hijriText = hijriMonthNames[currentCalMonth] || '';
+      monthDisplay.innerHTML = `<span>${monthNames[currentCalMonth]} ${currentCalYear}</span> ${hijriText ? `<span class="text-xs font-sans font-bold px-2 py-0.5 rounded-full bg-forest-100 text-forest-800 border border-forest-200">${hijriText}</span>` : ''}`;
+
+      grid.innerHTML = '';
+
+      const firstDay = new Date(currentCalYear, currentCalMonth, 1);
+      let startDayOfWeek = firstDay.getDay() - 1;
+      if (startDayOfWeek === -1) startDayOfWeek = 6;
+
+      const daysInMonth = new Date(currentCalYear, currentCalMonth + 1, 0).getDate();
+
+      for (let i = 0; i < startDayOfWeek; i++) {
+        const blank = document.createElement('div');
+        blank.className = 'p-2 text-forest-200 pointer-events-none';
+        grid.appendChild(blank);
+      }
+
+      for (let day = 1; day <= daysInMonth; day++) {
+        const dayDate = new Date(currentCalYear, currentCalMonth, day);
+        const dayOfWeek = dayDate.getDay();
+        const dateStr = `${currentCalYear}-${String(currentCalMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+
+        const isPast = dayDate < new Date(2026, 8, 13);
+        const isGold = specialDays[dateStr]?.type === 'gold';
+        const isSunnah = (dayOfWeek === 1 || dayOfWeek === 4);
+        const isSelected = (dateStr === selectedDateKey);
+
+        const cell = document.createElement('div');
+        cell.className = `cal-day-btn p-2 sm:p-2.5 rounded-2xl border text-center relative flex flex-col items-center justify-center min-h-[50px] sm:min-h-[56px]`;
+
+        if (isPast) {
+          cell.classList.add('opacity-30', 'bg-forest-50/30', 'border-transparent', 'cursor-not-allowed');
+        } else if (isSelected) {
+          cell.classList.add('selected');
+        } else if (isGold) {
+          cell.classList.add('bg-amber-50', 'border-amber-300', 'text-amber-950', 'font-bold');
+        } else if (isSunnah) {
+          cell.classList.add('bg-emerald-50/70', 'border-emerald-200', 'text-forest-950', 'font-semibold');
+        } else {
+          cell.classList.add('bg-white', 'border-forest-100', 'text-forest-900');
+        }
+
+        let dayHtml = `<span class="text-xs sm:text-sm font-extrabold">${day}</span>`;
+        if (isGold) {
+          dayHtml += `<span class="text-[8px] font-black text-amber-700 block leading-none mt-0.5">⭐ ALTIN</span>`;
+        } else if (isSunnah && !isPast) {
+          dayHtml += `<span class="text-[8px] font-bold text-emerald-700 block leading-none mt-0.5">Sünnet</span>`;
+        }
+
+        cell.innerHTML = dayHtml;
+
+        if (!isPast) {
+          cell.onclick = () => selectCalendarDate(dateStr, day, dayOfWeek);
+        }
+
+        grid.appendChild(cell);
+      }
+    }
+
+    

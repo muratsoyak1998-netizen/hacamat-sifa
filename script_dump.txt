@@ -1,0 +1,29 @@
+let currentCalMonth = 8; // 8 = Eylül 2026
+    let currentCalYear = 2026;
+    
+    const specialDays = {
+      '2026-09-29': { type: 'gold', title: '⭐ BÜYÜK ALTIN GÜN (Rebiülevvel 17 / Mevlid Ayı)', info: 'Yılın en faziletli kupa vaktidir. Efendimiz SAV Mevlid ayı Salı şifası.' },
+      '2026-10-01': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 19)', info: 'Rebiülevvel 19 Perşembe altın gün seansı.' },
+      '2026-10-03': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 21)', info: 'Rebiülevvel 21 Cumartesi şifa günü.' },
+      '2026-10-27': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 17)', info: 'Rebiülahir 17 Salı altın günü.' },
+      '2026-10-29': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 19)', info: 'Rebiülahir 19 Perşembe altın günü.' },
+      '2026-11-26': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 17)', info: 'Cemaziyelevvel 17 Perşembe altın günü.' }
+    };
+
+    let selectedDateKey = '2026-09-29';
+    let selectedDateText = '29 Eylül 2026 Salı';
+    let selectedTimeSlot = '10:00';
+
+    const monthNames = [
+      'Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran',
+      'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'
+    ];
+    const hijriMonthNames = [
+      '', '', '', '', '', '', '', '',
+      'Hicri Rebiülevvel', 'Hicri Rebiülahir', 'Hicri Cemaziyelevvel', 'Hicri Cemaziyelahir'
+    ];
+
+    // Seans Saatleri
+    const standardTimeSlots = ['10:00', '11:30', '14:00', '16:00', '18:00', '20:00'];
+
+    
