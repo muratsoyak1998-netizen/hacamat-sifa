@@ -2530,12 +2530,10 @@
     let currentCalYear = 2026;
     
     const specialDays = {
-      '2026-09-29': { type: 'gold', title: '⭐ BÜYÜK ALTIN GÜN (Rebiülevvel 17 / Mevlid Ayı)', info: 'Yılın en faziletli kupa vaktidir. Efendimiz SAV Mevlid ayı Salı şifası.' },
-      '2026-10-01': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 19)', info: 'Rebiülevvel 19 Perşembe altın gün seansı.' },
-      '2026-10-03': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 21)', info: 'Rebiülevvel 21 Cumartesi şifa günü.' },
-      '2026-10-27': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 17)', info: 'Rebiülahir 17 Salı altın günü.' },
-      '2026-10-29': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 19)', info: 'Rebiülahir 19 Perşembe altın günü.' },
-      '2026-11-26': { type: 'gold', title: '⭐ ALTIN GÜN (Hicri 17)', info: 'Cemaziyelevvel 17 Perşembe altın günü.' }
+      '2026-09-01': { type: 'gold', title: '⭐ ALTIN GÜN', info: 'Eylül ayı Altın Gün seansı.' },
+      '2026-09-03': { type: 'gold', title: '⭐ ALTIN GÜN', info: 'Eylül ayı Altın Gün seansı.' },
+      '2026-09-28': { type: 'gold', title: '⭐ BÜYÜK ALTIN GÜN', info: 'Yılın en faziletli kupa vaktidir.' },
+      '2026-10-28': { type: 'gold', title: '⭐ BÜYÜK ALTIN GÜN', info: 'Ekim ayı Büyük Altın Gün şifası.' }
     };
 
     let selectedDateKey = '2026-09-29';
@@ -2649,13 +2647,14 @@
 
         const isPast = dayDate < new Date(2026, 8, 13);
         const isGold = specialDays[dateStr]?.type === 'gold';
-        const isSunnah = (dayOfWeek === 1 || dayOfWeek === 4);
+        const isProhibited = !isGold && (dayOfWeek === 3 || dayOfWeek === 5 || dayOfWeek === 6);
+        const isSunnah = !isProhibited && !isGold;
         const isSelected = (dateStr === selectedDateKey);
 
         const cell = document.createElement('div');
         cell.className = `cal-day-btn p-2 sm:p-2.5 rounded-2xl border text-center relative flex flex-col items-center justify-center min-h-[50px] sm:min-h-[56px]`;
 
-        if (isPast) {
+        if (isPast || isProhibited) {
           cell.classList.add('opacity-30', 'bg-forest-50/30', 'border-transparent', 'cursor-not-allowed');
         } else if (isSelected) {
           cell.classList.add('selected');
@@ -2676,7 +2675,7 @@
 
         cell.innerHTML = dayHtml;
 
-        if (!isPast) {
+        if (!isPast && !isProhibited) {
           cell.onclick = () => selectCalendarDate(dateStr, day, dayOfWeek);
         }
 
